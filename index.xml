@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Royswale Code Garden</title>
+    <link>https://royswale.github.io/</link>
+    <description>Recent content on Royswale Code Garden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Dec 2018 19:34:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://royswale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Setup</title>
+      <link>https://royswale.github.io/posts/hugo-setup/</link>
+      <pubDate>Mon, 10 Dec 2018 19:34:01 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/hugo-setup/</guid>
+      <description>install hugo https://gohugo.io/getting-started/installing/#binary-cross-platfor
+download hugo .exe and put it in PATH, for example, put hugo.exe in GOPATH/bin is ok.
+init a blog https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site
+hugo version hugo new site blog  add a theme https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme
+cd blog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Edit your config.toml configuration file # and add the Ananke theme. echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  add some content https://gohugo.io/getting-started/quick-start/#step-4-add-some-content
+hugo new posts/my-first-post.md # Edit the newly created content file if you want.</description>
+    </item>
+    
+    <item>
+      <title>Thinkphp Setup</title>
+      <link>https://royswale.github.io/posts/thinkphp-setup/</link>
+      <pubDate>Mon, 10 Dec 2018 19:30:36 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/thinkphp-setup/</guid>
+      <description>nginx 配置 https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony
+老朱亲自写的,最完美ThinkPHP Nginx 配置文件 http://www.thinkphp.cn/topic/34380.html
+https://www.jianshu.com/p/018e5d0337a4
+https://blog.csdn.net/voke_/article/details/79756886
+http://www.thinkphp.cn/topic/40391.html
+https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/
+Apache 修改 public/.htaccess 即可 https://blog.csdn.net/Developersq/article/details/78386122
+https://blog.csdn.net/lw545034502/article/details/79374611
+wechat.log permission https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128
+http://xingtan.xyz/
+这个是 easywechat 的日志文件 在 application 目录下没有权限创建?</description>
+    </item>
+    
+  </channel>
+</rss>
