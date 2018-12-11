@@ -6,10 +6,19 @@
     <description>Recent content on Royswale Code Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 14:18:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 15:58:34 +0800</lastBuildDate>
     
 	<atom:link href="https://royswale.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Typescript in 5 Minutes</title>
+      <link>https://royswale.github.io/posts/typescript-in-5-minutes/</link>
+      <pubDate>Tue, 11 Dec 2018 15:58:34 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/typescript-in-5-minutes/</guid>
+      <description>https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html  </description>
+    </item>
     
     <item>
       <title>Fullstack Javascript</title>
@@ -52,13 +61,19 @@ https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html
 https://github.com/njleonzhang/vscode-extension-mardown-image-paste
 https://github.com/njleonzhang/electron-image-ipc-server
  这个是用 electron 的方式获取剪切板的图片，另辟蹊径
- dev https://code.visualstudio.com/docs/extensions/overview
-https://code.visualstudio.com/docs/extensions/example-hello-world
+ dev https://code.visualstudio.com/docs/extensions/overview https://code.visualstudio.com/docs/extensions/example-hello-world  https://code.visualstudio.com/docs/extensions/samples
+https://github.com/Microsoft/vscode-extension-samples
+https://code.visualstudio.com/docs/extensions/developing-extensions
+How to Make A Visual Studio Code Extension [to Generate Ducks]
+https://itnext.io/how-to-make-a-visual-studio-code-extension-77085dce7d82
+https://css-tricks.com/what-i-learned-by-building-my-own-vs-code-extension/
 vscode编写插件详细过程
 http://www.cnblogs.com/caipeiyu/p/5507252.html
-https://github.com/favers/vscode-qiniu-upload-image
+dev paste to qiniu https://github.com/favers/vscode-qiniu-upload-image
 这个插件配置有点问题，fork之后修改一下
-https://github.com/royswale/vscode-paste-image-upload-qiniu</description>
+https://github.com/royswale/vscode-paste-image-upload-qiniu
+VSCode User Settings 有关图片粘贴上传的插件配置
+// https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image // &amp;quot;pasteImage.path&amp;quot;: &amp;quot;${currentFileNameWithoutExt}&amp;quot;, // &amp;quot;pasteImage.insertPattern&amp;quot;: &amp;quot;${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}&amp;quot;, // when write hexo post and paste image use post_asset_folder = true // &amp;quot;pasteImage.</description>
     </item>
     
     <item>
@@ -86,7 +101,7 @@ https://lbs.qq.com/qqmap_wx_jssdk/index.html</description>
       <pubDate>Tue, 11 Dec 2018 09:11:25 +0800</pubDate>
       
       <guid>https://royswale.github.io/posts/git/</guid>
-      <description> submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
+      <description> https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &amp;ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
  </description>
     </item>
