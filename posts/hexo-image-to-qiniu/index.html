@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Royswale Code Garden  | hexo image to qiniu</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.52" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.955516233bcafa4d2a1c13cea63c7b50.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="hexo image to qiniu" />
+<meta property="og:description" content="image process and store upload markdown image to qiniu 使用七牛为Hexo存储图片等资源 Hexo Next主题博客功能完善 使用七牛云储存博客图片 hexo图片迁移至七牛 https://github.com/gyk001/hexo-qiniu-sync
+current store image locally https://hexo.io/docs/asset-folders.html https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder
+modify hexo _config.yml
+post_asset_folder: true  I use VSCode to write post with Paste Image extension
+&quot;pasteImage.path&quot;: &quot;${currentFileNameWithoutExt}&quot;, &quot;pasteImage.insertPattern&quot;: &quot;{% asset_img ${imageFileName} %}&quot;,  configure above in &ldquo;User Settings&rdquo; in order to compliant to hexo&rsquo;s post assets folder convention." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://royswale.github.io/posts/hexo-image-to-qiniu/" /><meta property="article:published_time" content="2018-12-06T15:44:44&#43;08:00"/>
+<meta property="article:modified_time" content="2018-12-06T15:44:44&#43;08:00"/>
+
+<meta itemprop="name" content="hexo image to qiniu">
+<meta itemprop="description" content="image process and store upload markdown image to qiniu 使用七牛为Hexo存储图片等资源 Hexo Next主题博客功能完善 使用七牛云储存博客图片 hexo图片迁移至七牛 https://github.com/gyk001/hexo-qiniu-sync
+current store image locally https://hexo.io/docs/asset-folders.html https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder
+modify hexo _config.yml
+post_asset_folder: true  I use VSCode to write post with Paste Image extension
+&quot;pasteImage.path&quot;: &quot;${currentFileNameWithoutExt}&quot;, &quot;pasteImage.insertPattern&quot;: &quot;{% asset_img ${imageFileName} %}&quot;,  configure above in &ldquo;User Settings&rdquo; in order to compliant to hexo&rsquo;s post assets folder convention.">
+
+
+<meta itemprop="datePublished" content="2018-12-06T15:44:44&#43;08:00" />
+<meta itemprop="dateModified" content="2018-12-06T15:44:44&#43;08:00" />
+<meta itemprop="wordCount" content="58">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="hexo image to qiniu"/>
+<meta name="twitter:description" content="image process and store upload markdown image to qiniu 使用七牛为Hexo存储图片等资源 Hexo Next主题博客功能完善 使用七牛云储存博客图片 hexo图片迁移至七牛 https://github.com/gyk001/hexo-qiniu-sync
+current store image locally https://hexo.io/docs/asset-folders.html https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder
+modify hexo _config.yml
+post_asset_folder: true  I use VSCode to write post with Paste Image extension
+&quot;pasteImage.path&quot;: &quot;${currentFileNameWithoutExt}&quot;, &quot;pasteImage.insertPattern&quot;: &quot;{% asset_img ${imageFileName} %}&quot;,  configure above in &ldquo;User Settings&rdquo; in order to compliant to hexo&rsquo;s post assets folder convention."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://royswale.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Royswale Code Garden
+    </a>
+    <div class="flex-l items-center">
+      
+      
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">hexo image to qiniu</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-12-06T15:44:44&#43;08:00">December 6, 2018</time>      
+      
+      
+    </header>
+
+    
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l">
+
+<h2 id="image-process-and-store">image process and store</h2>
+
+<h3 id="upload-markdown-image-to-qiniu">upload markdown image to qiniu</h3>
+
+<p><a href="https://yuchen-lea.github.io/2016-01-21-use-qiniu-store-file-for-hexo/">使用七牛为Hexo存储图片等资源</a>
+<a href="https://www.jianshu.com/p/6f77c96b7eff">Hexo Next主题博客功能完善</a>
+<a href="https://marvae.github.io/2017-12-01/qiqiu/">使用七牛云储存博客图片</a>
+<a href="http://farwmarth.com/hexo%E5%9B%BE%E7%89%87%E8%BF%81%E7%A7%BB%E8%87%B3%E4%B8%83%E7%89%9B/">hexo图片迁移至七牛</a>
+<a href="https://github.com/gyk001/hexo-qiniu-sync">https://github.com/gyk001/hexo-qiniu-sync</a></p>
+
+<h3 id="current-store-image-locally">current store image locally</h3>
+
+<p><a href="https://hexo.io/docs/asset-folders.html">https://hexo.io/docs/asset-folders.html</a>
+<a href="https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder">https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder</a></p>
+
+<p>modify hexo <code>_config.yml</code></p>
+
+<pre><code class="language-bash">post_asset_folder: true
+</code></pre>
+
+<p>I use VSCode to write post with <a href="https://github.com/mushanshitiancai/vscode-paste-image">Paste Image</a> extension</p>
+
+<pre><code class="language-bash">&quot;pasteImage.path&quot;: &quot;${currentFileNameWithoutExt}&quot;,
+&quot;pasteImage.insertPattern&quot;: &quot;{% asset_img ${imageFileName} %}&quot;,
+</code></pre>
+
+<p>configure above in &ldquo;User Settings&rdquo; in order to compliant to hexo&rsquo;s post assets folder convention.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://royswale.github.io/" >
+    &copy; 2018 Royswale Code Garden
+  </a>
+    <div>
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

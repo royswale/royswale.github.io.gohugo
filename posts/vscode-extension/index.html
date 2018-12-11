@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Royswale Code Garden  | Vscode Extension</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.52" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.955516233bcafa4d2a1c13cea63c7b50.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Vscode Extension" />
+<meta property="og:description" content="image VsCode插件：七牛图床工具，写文章更快一步
+https://imys.net/20160726/vscode-extension-qiniu-upload.html
+https://github.com/yscoder/vscode-qiniu-upload-image
+https://github.com/mushanshitiancai/vscode-paste-image
+https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
+https://github.com/favers/vscode-qiniu-upload-image
+https://marketplace.visualstudio.com/items?itemName=favers.paste-image-to-qiniu
+ 这个插件综合了1和2的功能，我用的是这个
+ 实现一个 vscode 粘贴图片的插件
+https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html
+https://github.com/njleonzhang/vscode-extension-mardown-image-paste
+https://github.com/njleonzhang/electron-image-ipc-server
+ 这个是用 electron 的方式获取剪切板的图片，另辟蹊径
+ dev https://code.visualstudio.com/docs/extensions/overview
+https://code.visualstudio.com/docs/extensions/example-hello-world
+vscode编写插件详细过程
+http://www.cnblogs.com/caipeiyu/p/5507252.html
+https://github.com/favers/vscode-qiniu-upload-image
+这个插件配置有点问题，fork之后修改一下
+https://github.com/royswale/vscode-paste-image-upload-qiniu" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://royswale.github.io/posts/vscode-extension/" /><meta property="article:published_time" content="2018-12-11T09:56:48&#43;08:00"/>
+<meta property="article:modified_time" content="2018-12-11T09:56:48&#43;08:00"/>
+
+<meta itemprop="name" content="Vscode Extension">
+<meta itemprop="description" content="image VsCode插件：七牛图床工具，写文章更快一步
+https://imys.net/20160726/vscode-extension-qiniu-upload.html
+https://github.com/yscoder/vscode-qiniu-upload-image
+https://github.com/mushanshitiancai/vscode-paste-image
+https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
+https://github.com/favers/vscode-qiniu-upload-image
+https://marketplace.visualstudio.com/items?itemName=favers.paste-image-to-qiniu
+ 这个插件综合了1和2的功能，我用的是这个
+ 实现一个 vscode 粘贴图片的插件
+https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html
+https://github.com/njleonzhang/vscode-extension-mardown-image-paste
+https://github.com/njleonzhang/electron-image-ipc-server
+ 这个是用 electron 的方式获取剪切板的图片，另辟蹊径
+ dev https://code.visualstudio.com/docs/extensions/overview
+https://code.visualstudio.com/docs/extensions/example-hello-world
+vscode编写插件详细过程
+http://www.cnblogs.com/caipeiyu/p/5507252.html
+https://github.com/favers/vscode-qiniu-upload-image
+这个插件配置有点问题，fork之后修改一下
+https://github.com/royswale/vscode-paste-image-upload-qiniu">
+
+
+<meta itemprop="datePublished" content="2018-12-11T09:56:48&#43;08:00" />
+<meta itemprop="dateModified" content="2018-12-11T09:56:48&#43;08:00" />
+<meta itemprop="wordCount" content="26">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vscode Extension"/>
+<meta name="twitter:description" content="image VsCode插件：七牛图床工具，写文章更快一步
+https://imys.net/20160726/vscode-extension-qiniu-upload.html
+https://github.com/yscoder/vscode-qiniu-upload-image
+https://github.com/mushanshitiancai/vscode-paste-image
+https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
+https://github.com/favers/vscode-qiniu-upload-image
+https://marketplace.visualstudio.com/items?itemName=favers.paste-image-to-qiniu
+ 这个插件综合了1和2的功能，我用的是这个
+ 实现一个 vscode 粘贴图片的插件
+https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html
+https://github.com/njleonzhang/vscode-extension-mardown-image-paste
+https://github.com/njleonzhang/electron-image-ipc-server
+ 这个是用 electron 的方式获取剪切板的图片，另辟蹊径
+ dev https://code.visualstudio.com/docs/extensions/overview
+https://code.visualstudio.com/docs/extensions/example-hello-world
+vscode编写插件详细过程
+http://www.cnblogs.com/caipeiyu/p/5507252.html
+https://github.com/favers/vscode-qiniu-upload-image
+这个插件配置有点问题，fork之后修改一下
+https://github.com/royswale/vscode-paste-image-upload-qiniu"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://royswale.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Royswale Code Garden
+    </a>
+    <div class="flex-l items-center">
+      
+      
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Vscode Extension</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-12-11T09:56:48&#43;08:00">December 11, 2018</time>      
+      
+      
+    </header>
+
+    
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l">
+
+<h3 id="image">image</h3>
+
+<p>VsCode插件：七牛图床工具，写文章更快一步<br />
+<a href="https://imys.net/20160726/vscode-extension-qiniu-upload.html">https://imys.net/20160726/vscode-extension-qiniu-upload.html</a><br />
+<a href="https://github.com/yscoder/vscode-qiniu-upload-image">https://github.com/yscoder/vscode-qiniu-upload-image</a></p>
+
+<p><a href="https://github.com/mushanshitiancai/vscode-paste-image">https://github.com/mushanshitiancai/vscode-paste-image</a><br />
+<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image</a></p>
+
+<p><a href="https://github.com/favers/vscode-qiniu-upload-image">https://github.com/favers/vscode-qiniu-upload-image</a><br />
+<a href="https://marketplace.visualstudio.com/items?itemName=favers.paste-image-to-qiniu">https://marketplace.visualstudio.com/items?itemName=favers.paste-image-to-qiniu</a></p>
+
+<blockquote>
+<p>这个插件综合了1和2的功能，我用的是这个</p>
+</blockquote>
+
+<p>实现一个 vscode 粘贴图片的插件<br />
+<a href="https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html">https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html</a><br />
+<a href="https://github.com/njleonzhang/vscode-extension-mardown-image-paste">https://github.com/njleonzhang/vscode-extension-mardown-image-paste</a><br />
+<a href="https://github.com/njleonzhang/electron-image-ipc-server">https://github.com/njleonzhang/electron-image-ipc-server</a></p>
+
+<blockquote>
+<p>这个是用 electron 的方式获取剪切板的图片，另辟蹊径</p>
+</blockquote>
+
+<h3 id="dev">dev</h3>
+
+<p><a href="https://code.visualstudio.com/docs/extensions/overview">https://code.visualstudio.com/docs/extensions/overview</a><br />
+<a href="https://code.visualstudio.com/docs/extensions/example-hello-world">https://code.visualstudio.com/docs/extensions/example-hello-world</a></p>
+
+<p>vscode编写插件详细过程<br />
+<a href="http://www.cnblogs.com/caipeiyu/p/5507252.html">http://www.cnblogs.com/caipeiyu/p/5507252.html</a></p>
+
+<p><a href="https://github.com/favers/vscode-qiniu-upload-image">https://github.com/favers/vscode-qiniu-upload-image</a><br />
+这个插件配置有点问题，fork之后修改一下<br />
+<a href="https://github.com/royswale/vscode-paste-image-upload-qiniu">https://github.com/royswale/vscode-paste-image-upload-qiniu</a></p>
+
+<p><img src="d:/Code/github.com/royswale/gohugoblog/content/posts/vscode-extension.md-20181211114438.png" alt="vscode-extension.md-20181211114438" /></p>
+
+<p><img src="http://qiniu.xingtan.xyz/2018-12-11-11-49-40-20181211114941.png" alt="2018-12-11-11-49-40-20181211114941" /></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://royswale.github.io/" >
+    &copy; 2018 Royswale Code Garden
+  </a>
+    <div>
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

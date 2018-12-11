@@ -18,7 +18,66 @@
       
       <guid>https://royswale.github.io/posts/fullstack-javascript/</guid>
       <description>如何通过饿了么 Node.js 面试
-https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn</description>
+https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn
+想写好前端，先练好内功
+https://juejin.im/post/5c0dd824f265da611a47b080
+浅析前端开发中的 MVC/MVP/MVVM 模式  </description>
+    </item>
+    
+    <item>
+      <title>Vuejs</title>
+      <link>https://royswale.github.io/posts/vuejs/</link>
+      <pubDate>Tue, 11 Dec 2018 11:19:32 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/vuejs/</guid>
+      <description>https://github.com/kaeyleo/vue-shopping-cart 从零开始搭建 Vue SSR DEMO 1 - 为什么需要 SSR  </description>
+    </item>
+    
+    <item>
+      <title>Vscode Extension</title>
+      <link>https://royswale.github.io/posts/vscode-extension/</link>
+      <pubDate>Tue, 11 Dec 2018 09:56:48 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/vscode-extension/</guid>
+      <description>image VsCode插件：七牛图床工具，写文章更快一步
+https://imys.net/20160726/vscode-extension-qiniu-upload.html
+https://github.com/yscoder/vscode-qiniu-upload-image
+https://github.com/mushanshitiancai/vscode-paste-image
+https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
+https://github.com/favers/vscode-qiniu-upload-image
+https://marketplace.visualstudio.com/items?itemName=favers.paste-image-to-qiniu
+ 这个插件综合了1和2的功能，我用的是这个
+ 实现一个 vscode 粘贴图片的插件
+https://www.njleonzhang.com/2018/08/14/vs-code-paste-image.html
+https://github.com/njleonzhang/vscode-extension-mardown-image-paste
+https://github.com/njleonzhang/electron-image-ipc-server
+ 这个是用 electron 的方式获取剪切板的图片，另辟蹊径
+ dev https://code.visualstudio.com/docs/extensions/overview
+https://code.visualstudio.com/docs/extensions/example-hello-world
+vscode编写插件详细过程
+http://www.cnblogs.com/caipeiyu/p/5507252.html
+https://github.com/favers/vscode-qiniu-upload-image
+这个插件配置有点问题，fork之后修改一下
+https://github.com/royswale/vscode-paste-image-upload-qiniu</description>
+    </item>
+    
+    <item>
+      <title>Miniapp</title>
+      <link>https://royswale.github.io/posts/miniapp/</link>
+      <pubDate>Tue, 11 Dec 2018 09:56:39 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/miniapp/</guid>
+      <description>【小程序开发实践】王者图鉴
+http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/09/02/mini-program-kingdex.html
+微信小程序 - 王者图鉴
+https://github.com/kaeyleo/kingdex
+🕷️ node.js + leancloud 王者荣耀官网爬虫
+https://github.com/kaeyleo/king-of-glory-spider
+ 看了这个小程序，sketch设计的很好，交互很好，还接入了小程序推广
+ 一起脱去小程序的外套 - 微信小程序架构解析
+https://zhuanlan.zhihu.com/p/25105936
+微信小程序 微信小程序原生LBS能力的最佳拍档
+https://lbs.qq.com/qqmap_wx_jssdk/index.html</description>
     </item>
     
     <item>
@@ -74,6 +133,98 @@ composer https://getcomposer.org/download/
 就在普通用户的家目录 /home/anony/ 下执行
  Command-line installation
 php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&amp;quot; php -r &amp;quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&amp;quot; php composer-setup.</description>
+    </item>
+    
+    <item>
+      <title>charles grab packet of app</title>
+      <link>https://royswale.github.io/posts/charles-grab-packet-of-app/</link>
+      <pubDate>Fri, 07 Dec 2018 20:43:53 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/charles-grab-packet-of-app/</guid>
+      <description>use charles to grab packet of app miniapp videos in miniapp is not friendly, small screen and high latency
+so I use Charles to get the video uri, then download to baidu yun disk.</description>
+    </item>
+    
+    <item>
+      <title>nodejs windows build tools</title>
+      <link>https://royswale.github.io/posts/nodejs-windows-build-tools/</link>
+      <pubDate>Fri, 07 Dec 2018 14:11:26 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/nodejs-windows-build-tools/</guid>
+      <description>https://github.com/nodejs/node-gyp https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#compiling-native-addon-modules
+open powershell with administrator privilege
+npm i -g --production windows-build-tools  got this
+Status from the installers: ---------- Visual Studio Build Tools ---------- 2018-12-07T14:06:07 : Verbose : [InstalledProductsProviderImpl]: Stream was closed 2018-12-07T14:06:07 : Verbose : [InstallerImpl]: Rpc connection was closed. 2018-12-07T14:06:07 : Verbose : [InstallerImpl]: Stream was closed 2018-12-07T14:06:07 : Verbose : [SetupUpdaterImpl]: Rpc connection was closed. 2018-12-07T14:06:07 : Verbose : [SetupUpdaterImpl]: Stream was closed ------------------- Python -------------------- Python 2.</description>
+    </item>
+    
+    <item>
+      <title>scott nodejs weixin video tutorial</title>
+      <link>https://royswale.github.io/posts/scott-nodejs-weixin-video-tutorial/</link>
+      <pubDate>Fri, 07 Dec 2018 13:39:13 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/scott-nodejs-weixin-video-tutorial/</guid>
+      <description> scott nodejs weixin tutorial setup weixin apply weixin service account and miniapp account
+1-6 安装 Node.js v8.0 生产环境 my OS version is Ubuntu 18.04, but he prefer use ubuntu 14.04
+&amp;gt; sudo apt update # &amp;gt; sudo apt upgrade # &amp;gt; sudo apt autoremove &amp;gt; sudo apt install git vim openssl libssh-dev wget curl build-essential  </description>
+    </item>
+    
+    <item>
+      <title>hexo image to qiniu</title>
+      <link>https://royswale.github.io/posts/hexo-image-to-qiniu/</link>
+      <pubDate>Thu, 06 Dec 2018 15:44:44 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/hexo-image-to-qiniu/</guid>
+      <description>image process and store upload markdown image to qiniu 使用七牛为Hexo存储图片等资源 Hexo Next主题博客功能完善 使用七牛云储存博客图片 hexo图片迁移至七牛 https://github.com/gyk001/hexo-qiniu-sync
+current store image locally https://hexo.io/docs/asset-folders.html https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder
+modify hexo _config.yml
+post_asset_folder: true  I use VSCode to write post with Paste Image extension
+&amp;quot;pasteImage.path&amp;quot;: &amp;quot;${currentFileNameWithoutExt}&amp;quot;, &amp;quot;pasteImage.insertPattern&amp;quot;: &amp;quot;{% asset_img ${imageFileName} %}&amp;quot;,  configure above in &amp;ldquo;User Settings&amp;rdquo; in order to compliant to hexo&amp;rsquo;s post assets folder convention.</description>
+    </item>
+    
+    <item>
+      <title>hexo theme next</title>
+      <link>https://royswale.github.io/posts/hexo-theme-next/</link>
+      <pubDate>Thu, 06 Dec 2018 14:48:48 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/hexo-theme-next/</guid>
+      <description>next old https://theme-next.iissnan.com/getting-started.html
+new https://github.com/theme-next/hexo-theme-next
+https://theme-next.org/docs/getting-started/
+install https://github.com/theme-next/hexo-theme-next#installation https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md#option-3-download-latest-master-branch
+$ cd hexo $ git clone https://github.com/theme-next/hexo-theme-next themes/next  _config.yml
+## Themes: https://hexo.io/themes/ # theme: landscape theme: next   Now you have installed NexT theme, next we will verify whether it is enabled correctly. Between changing the theme and verifying it, we&amp;rsquo;d better use hexo clean to clean Hexo&amp;rsquo;s cache.
+ update https://github.com/theme-next/hexo-theme-next#update
+$ cd themes/next $ git pull  config hexo/_config.</description>
+    </item>
+    
+    <item>
+      <title>hexo deploy to gitee pages</title>
+      <link>https://royswale.github.io/posts/hexo-deploy-to-gitee-pages/</link>
+      <pubDate>Thu, 06 Dec 2018 13:42:02 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/hexo-deploy-to-gitee-pages/</guid>
+      <description>deply hexo to gitee pages quick start https://github.com/hexojs/hexo#installation https://github.com/hexojs/hexo#quick-start
+npm i -g hexo-cli hexo init blog cd blog hexo server hexo new &amp;quot;a new blog&amp;quot; hexo generate  create a private repo to hold your hexo raw data and configurations. https://gitee.com/yourname/whatever.git
+码云Pages 码云Pages 常见问题
+ 如何创建一个首页访问地址不带二级目录的 pages，如ipvb.gitee.io？ 你需要建立一个与自己个性地址同名的项目
+ create a public repo https://gitee.com/yourname/yourname.git
+码云Pages 一个小白的Pages搭建之旅
+depoly 部署 Git
+npm install hexo-deployer-git --save  _config.yml
+# Deployment ## Docs: https://hexo.</description>
+    </item>
+    
+    <item>
+      <title>How to install LEMP on Ubuntu 18.04</title>
+      <link>https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/</link>
+      <pubDate>Thu, 06 Dec 2018 11:44:23 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/</guid>
+      <description>How to install LEMP on Ubuntu 18.04 How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 主要是按照这个文章来的
+Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux ubuntu 18 默认不允许 root 登陆
+ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+创建新用户 赋予sudo权限 &amp;gt; sudo adduser robin &amp;gt; sudo usermod -aG sudo robin  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/
+&amp;gt; sudo ufw app list Available applications: OpenSSH &amp;gt; sudo ufw allow OpenSSH &amp;gt; sudo ufw enable &amp;gt; sudo ufw status Status: active To Action From -- ------ ---- OpenSSH ALLOW Anywhere OpenSSH (v6) ALLOW Anywhere (v6) ```` #### ssh key 没用到 How to Set Up SSH Keys on Ubuntu 18.</description>
     </item>
     
   </channel>

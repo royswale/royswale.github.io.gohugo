@@ -8,6 +8,21 @@
   </url>
   
   <url>
+    <loc>https://royswale.github.io/posts/vuejs/</loc>
+    <lastmod>2018-12-11T11:19:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/vscode-extension/</loc>
+    <lastmod>2018-12-11T09:56:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/miniapp/</loc>
+    <lastmod>2018-12-11T09:56:39+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://royswale.github.io/posts/git/</loc>
     <lastmod>2018-12-11T09:11:25+08:00</lastmod>
   </url>
@@ -25,6 +40,41 @@
   <url>
     <loc>https://royswale.github.io/posts/thinkphp-setup/</loc>
     <lastmod>2018-12-10T19:30:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/charles-grab-packet-of-app/</loc>
+    <lastmod>2018-12-07T20:43:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/nodejs-windows-build-tools/</loc>
+    <lastmod>2018-12-07T14:11:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/scott-nodejs-weixin-video-tutorial/</loc>
+    <lastmod>2018-12-07T13:39:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/hexo-image-to-qiniu/</loc>
+    <lastmod>2018-12-06T15:44:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/hexo-theme-next/</loc>
+    <lastmod>2018-12-06T14:48:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/hexo-deploy-to-gitee-pages/</loc>
+    <lastmod>2018-12-06T13:42:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/</loc>
+    <lastmod>2018-12-06T11:44:23+08:00</lastmod>
   </url>
   
   <url>
