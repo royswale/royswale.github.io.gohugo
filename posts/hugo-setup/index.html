@@ -50,7 +50,7 @@ hugo new posts/my-first-post.md # Edit the newly created content file if you wan
 
 <meta itemprop="datePublished" content="2018-12-10T19:34:01&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-10T19:34:01&#43;08:00" />
-<meta itemprop="wordCount" content="395">
+<meta itemprop="wordCount" content="480">
 
 
 
@@ -122,7 +122,8 @@ hugo new posts/my-first-post.md # Edit the newly created content file if you wan
       
     </header>
 
-    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+    
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l">
 
 <h3 id="install-hugo">install hugo</h3>
 
@@ -228,7 +229,7 @@ theme=&quot;ananke&quot;
 
 <h3 id="代码高亮">代码高亮</h3>
 
-<p><a href="https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode">https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode</a>
+<p><a href="https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode">https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode</a><br />
 <a href="https://gohugo.io/content-management/shortcodes/#highlight">https://gohugo.io/content-management/shortcodes/#highlight</a></p>
 
 <p>主要参考这个<br />
@@ -275,6 +276,52 @@ theme=&quot;ananke&quot;
 <h4 id="highlight-js">Highlight.js</h4>
 
 <p><a href="https://highlightjs.org/">https://highlightjs.org/</a></p>
+
+<p><a href="https://www.bootcdn.cn/highlight.js/">https://www.bootcdn.cn/highlight.js/</a></p>
+
+<p>Hugo中添加代码高亮支持<br />
+<a href="http://note.qidong.name/2017/06/24/hugo-highlight/">http://note.qidong.name/2017/06/24/hugo-highlight/</a></p>
+
+<p>Chroma 和 Pygments 都是服务端渲染的方式，都需要安装 python 包 Pygments?</p>
+
+<p>但是他们可以高亮代码的某几行和设置代码起始行号，不知道highlight.js可不可以?</p>
+
+<h3 id="in-depth-with-hugo-theme">in-depth with hugo theme</h3>
+
+<p><a href="https://forestry.io/blog/up-and-running-with-hugo/">https://forestry.io/blog/up-and-running-with-hugo/</a></p>
+
+<h4 id="custom-this-ananke-theme">custom this ananke theme</h4>
+
+<p>copy from <code>themes/ananke/layouts/partials/site-footer.html</code> to <code>gohugoblog/layouts/partials/site-footer.html</code><br />
+append highlight.js code to the bottom</p>
+
+<pre><code class="language-html">&lt;link href=&quot;https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</code></pre>
+
+<p>copy from <code>themes/ananke/layouts/_default/single.html</code> to <code>gohugoblog/layouts/_default/single.html</code><br />
+remove the width 66.666% class <code>w-two-thirds-l</code> to make the main part wider.</p>
+
+<pre><code class="language-html">&lt;!-- &lt;main class=&quot;nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l&quot;&gt; --&gt;
+&lt;main class=&quot;nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l&quot;&gt;
+</code></pre>
+
+<p>所以说，根目录下的模板文件可以覆盖主题的同名文件吗?</p>
+
+<h4 id="awesome-themes">awesome themes</h4>
+
+<p><a href="https://github.com/yscoder/hexo-theme-indigo">https://github.com/yscoder/hexo-theme-indigo</a></p>
+
+<p><a href="https://github.com/kaeyleo/jekyll-theme-H2O">https://github.com/kaeyleo/jekyll-theme-H2O</a></p>
+
+<p><a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a></p>
+
+<h3 id="comment-plugin">comment plugin</h3>
+
+<p><a href="https://valine.js.org/">https://valine.js.org/</a></p>
+
+<p>disqus?</p>
 <ul class="pa0">
   
 </ul>
@@ -316,6 +363,9 @@ theme=&quot;ananke&quot;
   </div>
 </footer>
 
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
     
 
   <script src="/dist/js/app.3fc0f988d21662902933.js"></script>

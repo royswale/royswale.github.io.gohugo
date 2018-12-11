@@ -35,7 +35,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://royswale.github.io/posts/" />
-<meta property="og:updated_time" content="2018-12-10T19:34:01&#43;08:00"/>
+<meta property="og:updated_time" content="2018-12-11T09:11:25&#43;08:00"/>
 
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
@@ -98,6 +98,39 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/posts/git/" class="link black dim">
+        Git
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
+ 不过还有更简单一点的方式。 如果给 git clone 命令传递 &ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
+ 
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/ad/" class="link black dim">
+        Ad
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      http://note.qidong.name/2017/07/05/google-analytics-in-hugo/ http://note.qidong.name/2017/10/web-advertisement/
+申请Google Adsense, 结合Hugo配置 https://blog.xu42.cn/2018/09/01/google-adsense/
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/posts/hugo-setup/" class="link black dim">
         Hugo Setup
       </a>
@@ -123,17 +156,18 @@ hugo new posts/my-first-post.md # Edit the newly created content file if you wan
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      nginx 配置 https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony
-老朱亲自写的,最完美ThinkPHP Nginx 配置文件 http://www.thinkphp.cn/topic/34380.html
-https://www.jianshu.com/p/018e5d0337a4
-https://blog.csdn.net/voke_/article/details/79756886
-http://www.thinkphp.cn/topic/40391.html
-https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/
-Apache 修改 public/.htaccess 即可 https://blog.csdn.net/Developersq/article/details/78386122
-https://blog.csdn.net/lw545034502/article/details/79374611
-wechat.log permission https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128
-http://xingtan.xyz/
-这个是 easywechat 的日志文件 在 application 目录下没有权限创建?
+      在 LEMP 安装配置完成的情况下
+thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
+ 三、Git安装
+首先克隆下载应用项目仓库
+git clone https://github.com/top-think/think tp5
+然后切换到tp5目录下面，再克隆核心框架仓库：
+git clone https://github.com/top-think/framework thinkphp
+ git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
+composer https://getcomposer.org/download/
+就在普通用户的家目录 /home/anony/ 下执行
+ Command-line installation
+php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot; php -r &quot;if (hash_file('sha384', 'composer-setup.php') === '93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot; php composer-setup.
     </div>
   </div>
 </div>
@@ -166,6 +200,9 @@ http://xingtan.xyz/
   </div>
 </footer>
 
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
     
 
   <script src="/dist/js/app.3fc0f988d21662902933.js"></script>

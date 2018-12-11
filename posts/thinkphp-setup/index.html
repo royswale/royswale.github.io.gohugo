@@ -29,55 +29,58 @@
     
 
     <meta property="og:title" content="Thinkphp Setup" />
-<meta property="og:description" content="nginx 配置 https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony
-老朱亲自写的,最完美ThinkPHP Nginx 配置文件 http://www.thinkphp.cn/topic/34380.html
-https://www.jianshu.com/p/018e5d0337a4
-https://blog.csdn.net/voke_/article/details/79756886
-http://www.thinkphp.cn/topic/40391.html
-https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/
-Apache 修改 public/.htaccess 即可 https://blog.csdn.net/Developersq/article/details/78386122
-https://blog.csdn.net/lw545034502/article/details/79374611
-wechat.log permission https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128
-http://xingtan.xyz/
-这个是 easywechat 的日志文件 在 application 目录下没有权限创建?" />
+<meta property="og:description" content="在 LEMP 安装配置完成的情况下
+thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
+ 三、Git安装
+首先克隆下载应用项目仓库
+git clone https://github.com/top-think/think tp5
+然后切换到tp5目录下面，再克隆核心框架仓库：
+git clone https://github.com/top-think/framework thinkphp
+ git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
+composer https://getcomposer.org/download/
+就在普通用户的家目录 /home/anony/ 下执行
+ Command-line installation
+php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://royswale.github.io/posts/thinkphp-setup/" /><meta property="article:published_time" content="2018-12-10T19:30:36&#43;08:00"/>
 <meta property="article:modified_time" content="2018-12-10T19:30:36&#43;08:00"/>
 
 <meta itemprop="name" content="Thinkphp Setup">
-<meta itemprop="description" content="nginx 配置 https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony
-老朱亲自写的,最完美ThinkPHP Nginx 配置文件 http://www.thinkphp.cn/topic/34380.html
-https://www.jianshu.com/p/018e5d0337a4
-https://blog.csdn.net/voke_/article/details/79756886
-http://www.thinkphp.cn/topic/40391.html
-https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/
-Apache 修改 public/.htaccess 即可 https://blog.csdn.net/Developersq/article/details/78386122
-https://blog.csdn.net/lw545034502/article/details/79374611
-wechat.log permission https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128
-http://xingtan.xyz/
-这个是 easywechat 的日志文件 在 application 目录下没有权限创建?">
+<meta itemprop="description" content="在 LEMP 安装配置完成的情况下
+thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
+ 三、Git安装
+首先克隆下载应用项目仓库
+git clone https://github.com/top-think/think tp5
+然后切换到tp5目录下面，再克隆核心框架仓库：
+git clone https://github.com/top-think/framework thinkphp
+ git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
+composer https://getcomposer.org/download/
+就在普通用户的家目录 /home/anony/ 下执行
+ Command-line installation
+php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup.">
 
 
 <meta itemprop="datePublished" content="2018-12-10T19:30:36&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-10T19:30:36&#43;08:00" />
-<meta itemprop="wordCount" content="27">
+<meta itemprop="wordCount" content="171">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Thinkphp Setup"/>
-<meta name="twitter:description" content="nginx 配置 https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony
-老朱亲自写的,最完美ThinkPHP Nginx 配置文件 http://www.thinkphp.cn/topic/34380.html
-https://www.jianshu.com/p/018e5d0337a4
-https://blog.csdn.net/voke_/article/details/79756886
-http://www.thinkphp.cn/topic/40391.html
-https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/
-Apache 修改 public/.htaccess 即可 https://blog.csdn.net/Developersq/article/details/78386122
-https://blog.csdn.net/lw545034502/article/details/79374611
-wechat.log permission https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128
-http://xingtan.xyz/
-这个是 easywechat 的日志文件 在 application 目录下没有权限创建?"/>
+<meta name="twitter:description" content="在 LEMP 安装配置完成的情况下
+thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
+ 三、Git安装
+首先克隆下载应用项目仓库
+git clone https://github.com/top-think/think tp5
+然后切换到tp5目录下面，再克隆核心框架仓库：
+git clone https://github.com/top-think/framework thinkphp
+ git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
+composer https://getcomposer.org/download/
+就在普通用户的家目录 /home/anony/ 下执行
+ Command-line installation
+php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup."/>
 
   </head>
 
@@ -137,7 +140,67 @@ http://xingtan.xyz/
       
     </header>
 
-    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+    
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l">
+
+<p>在 LEMP 安装配置完成的情况下</p>
+
+<h4 id="thinkphp">thinkphp</h4>
+
+<p><a href="https://www.kancloud.cn/manual/thinkphp5/118006">https://www.kancloud.cn/manual/thinkphp5/118006</a></p>
+
+<blockquote>
+<p>三、Git安装<br />
+ 首先克隆下载应用项目仓库<br />
+ git clone <a href="https://github.com/top-think/think">https://github.com/top-think/think</a> tp5<br />
+ 然后切换到tp5目录下面，再克隆核心框架仓库：<br />
+ git clone <a href="https://github.com/top-think/framework">https://github.com/top-think/framework</a> thinkphp</p>
+</blockquote>
+
+<pre><code class="language-bash">git clone https://gitee.com/liu21st/thinkphp5 tp5
+cd tp5
+git clone https://gitee.com/liu21st/framework.git thinkphp
+composer update
+</code></pre>
+
+<p>别忘了在 <code>tp5</code> 目录下执行 <code>composer update</code> 安装扩展包</p>
+
+<h4 id="composer">composer</h4>
+
+<p><a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></p>
+
+<p>就在普通用户的家目录 /home/anony/ 下执行</p>
+
+<ol>
+<li><p>Command-line installation</p>
+
+<pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
+php -r &quot;if (hash_file('sha384', 'composer-setup.php') === '93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink('composer-setup.php');&quot;
+</code></pre>
+
+<p>执行完成之后发现 /home/anony/ 下多了一个 composer.phar 文件</p></li>
+
+<li><p><a href="https://getcomposer.org/doc/00-intro.md#globally">https://getcomposer.org/doc/00-intro.md#globally</a></p>
+
+<pre><code class="language-bash">mv composer.phar /usr/local/bin/composer
+</code></pre>
+
+<p>全局可用</p></li>
+
+<li><p>comoser package mirror</p>
+
+<p><a href="https://laravel-china.org/composer">https://laravel-china.org/composer</a></p>
+
+<p>全局配置</p>
+
+<pre><code class="language-bash">$ composer config -g repo.packagist composer https://packagist.laravel-china.org
+</code></pre>
+
+<p>还是以普通用户执行这条命令，
+后期composer的缓存目录的权限属于该用户</p></li>
+</ol>
 
 <h4 id="nginx-配置">nginx 配置</h4>
 
@@ -160,13 +223,60 @@ http://xingtan.xyz/
 
 <p><a href="https://blog.csdn.net/lw545034502/article/details/79374611">https://blog.csdn.net/lw545034502/article/details/79374611</a></p>
 
-<h4 id="wechat-log-permission">wechat.log permission</h4>
+<h3 id="easywechat">easywechat</h3>
 
-<p><a href="https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128">https://stackoverflow.com/questions/24055056/laravel-log-could-not-be-opened-failed-to-open-stream/24898128</a></p>
+<p>在 tp5 目录下安装 easywechat</p>
 
-<p><a href="http://xingtan.xyz/">http://xingtan.xyz/</a></p>
+<p><a href="https://www.easywechat.com/docs/master/installation">https://www.easywechat.com/docs/master/installation</a></p>
 
-<p>这个是 easywechat 的日志文件 在 application 目录下没有权限创建?</p>
+<pre><code class="language-bash">which composer
+composer require overtrue/wechat -vvv
+</code></pre>
+
+<p>报错，需要先安装 simplexml 扩展</p>
+
+<p><a href="https://www.limesurvey.org/es/comunidad/foros/installation-a-update-issues/113739-php-simplexml">https://www.limesurvey.org/es/comunidad/foros/installation-a-update-issues/113739-php-simplexml</a><br />
+<a href="https://neilyamit.com/dev/simplexml-disabled.html">https://neilyamit.com/dev/simplexml-disabled.html</a></p>
+
+<pre><code class="language-bash">sudo apt install php7.2-xml
+</code></pre>
+
+<p>访问微信授权接口，报错</p>
+
+<blockquote>
+<p>&hellip;wechat.log&rdquo; could not be opened: failed to open stream: Permission denied</p>
+</blockquote>
+
+<pre><code class="language-bash">touch tp5/application/wechat.log
+chmod a+rw wechat.log
+</code></pre>
+
+<p><a href="https://www.easywechat.com/docs/master/installation">https://www.easywechat.com/docs/master/installation</a></p>
+
+<p>SDK 基础：EasyWeChat 的安装<br />
+<a href="https://www.easywechat.com/lessons/1">https://www.easywechat.com/lessons/1</a></p>
+
+<p>easyWeChat 验证微信 token<br />
+<a href="https://blog.csdn.net/frank_hanhan/article/details/80972192">https://blog.csdn.net/frank_hanhan/article/details/80972192</a></p>
+
+<p>YII2中服务器端验证总是失败..
+<a href="https://github.com/overtrue/wechat/issues/1245">https://github.com/overtrue/wechat/issues/1245</a></p>
+
+<p><a href="https://github.com/qiqizjl/think-wechat">https://github.com/qiqizjl/think-wechat</a></p>
+
+<p>服务器上安装的thinkphp版本是5.1.x的，这个文档是5.0的
+<a href="https://www.kancloud.cn/manual/thinkphp5/118019">https://www.kancloud.cn/manual/thinkphp5/118019</a></p>
+
+<h3 id="微信小程序商城构建全栈应用">微信小程序商城构建全栈应用</h3>
+
+<p>全部文件&gt;微信小程序商城构建全栈应用（下&hellip;&gt;第9章微信登陆与令牌</p>
+
+<p>8-14 开启路由完整匹配模式</p>
+
+<p><a href="https://coding.imooc.com/class/chapter/97.html#Anchor">https://coding.imooc.com/class/chapter/97.html#Anchor</a></p>
+
+<p>关联预载入<br />
+<a href="https://www.kancloud.cn/manual/thinkphp5/139045">https://www.kancloud.cn/manual/thinkphp5/139045</a></p>
 <ul class="pa0">
   
 </ul>
@@ -208,6 +318,9 @@ http://xingtan.xyz/
   </div>
 </footer>
 
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
     
 
   <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
