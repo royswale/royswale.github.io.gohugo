@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Royswale Code Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 09:11:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 14:18:36 +0800</lastBuildDate>
     
 	<atom:link href="https://royswale.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fullstack Javascript</title>
+      <link>https://royswale.github.io/posts/fullstack-javascript/</link>
+      <pubDate>Tue, 11 Dec 2018 14:18:36 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/fullstack-javascript/</guid>
+      <description>如何通过饿了么 Node.js 面试
+https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn</description>
+    </item>
     
     <item>
       <title>Git</title>

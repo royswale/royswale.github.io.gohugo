@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://royswale.github.io/posts/fullstack-javascript/</loc>
+    <lastmod>2018-12-11T14:18:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://royswale.github.io/posts/git/</loc>
     <lastmod>2018-12-11T09:11:25+08:00</lastmod>
   </url>
@@ -29,13 +34,13 @@
   
   <url>
     <loc>https://royswale.github.io/posts/</loc>
-    <lastmod>2018-12-11T09:11:25+08:00</lastmod>
+    <lastmod>2018-12-11T14:18:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://royswale.github.io/</loc>
-    <lastmod>2018-12-11T09:11:25+08:00</lastmod>
+    <lastmod>2018-12-11T14:18:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
