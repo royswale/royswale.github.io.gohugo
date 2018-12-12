@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Royswale Code Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 15:58:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Dec 2018 09:30:57 +0800</lastBuildDate>
     
 	<atom:link href="https://royswale.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Admin Boilerplate</title>
+      <link>https://royswale.github.io/posts/admin-boilerplate/</link>
+      <pubDate>Wed, 12 Dec 2018 09:30:57 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/admin-boilerplate/</guid>
+      <description>php integration fastadmin https://www.fastadmin.net/
+laravel-admin https://laravel-admin.org/
+Laravel Admin Panel https://nova.laravel.com/
+https://statamic.com/
+https://laravelvoyager.com/
+http://laraadmin.com/
+https://backpackforlaravel.com/
+https://github.com/orchidsoftware/platform
+https://github.com/crocodic-studio/crudbooster
+https://github.com/Laracommerce/laracom</description>
+    </item>
     
     <item>
       <title>Typescript in 5 Minutes</title>
@@ -143,11 +161,9 @@ thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
 git clone https://github.com/top-think/think tp5
 然后切换到tp5目录下面，再克隆核心框架仓库：
 git clone https://github.com/top-think/framework thinkphp
- git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
-composer https://getcomposer.org/download/
-就在普通用户的家目录 /home/anony/ 下执行
- Command-line installation
-php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&amp;quot; php -r &amp;quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&amp;quot; php composer-setup.</description>
+ cd ~ git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
+nginx 配置 ThinkPHP5.1完全开发手册 -&amp;gt; 架构 -&amp;gt; URL访问 -&amp;gt; URL重写 -&amp;gt; [ Nginx ] https://www.kancloud.cn/manual/thinkphp5_1/353955#URL_22
+sudo vim /etc/nginx/sites-available/abc.xyz sudo nginx -t sudo service nginx status sudo service nginx restart sudo service nginx status  server { listen 80; root /home/annoy/tp5/public; index index.</description>
     </item>
     
     <item>
@@ -193,7 +209,8 @@ Status from the installers: ---------- Visual Studio Build Tools ---------- 2018
 current store image locally https://hexo.io/docs/asset-folders.html https://lucaseo.github.io/2018/02/20/howtodo-20180220-1/#activate-asset-folder
 modify hexo _config.yml
 post_asset_folder: true  I use VSCode to write post with Paste Image extension
-&amp;quot;pasteImage.path&amp;quot;: &amp;quot;${currentFileNameWithoutExt}&amp;quot;, &amp;quot;pasteImage.insertPattern&amp;quot;: &amp;quot;{% asset_img ${imageFileName} %}&amp;quot;,  configure above in &amp;ldquo;User Settings&amp;rdquo; in order to compliant to hexo&amp;rsquo;s post assets folder convention.</description>
+&amp;quot;pasteImage.path&amp;quot;: &amp;quot;${currentFileNameWithoutExt}&amp;quot;, &amp;quot;pasteImage.insertPattern&amp;quot;: &amp;quot;{% asset_img ${imageFileName} %}&amp;quot;,  configure above in &amp;ldquo;User Settings&amp;rdquo; in order to compliant to hexo&amp;rsquo;s post assets folder convention.
+七牛 测试域名 需要把测试域名绑定到自己的已备案域名，测试域名能用一个月。</description>
     </item>
     
     <item>
