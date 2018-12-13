@@ -154,16 +154,18 @@ hugo new posts/my-first-post.md # Edit the newly created content file if you wan
       <pubDate>Mon, 10 Dec 2018 19:30:36 +0800</pubDate>
       
       <guid>https://royswale.github.io/posts/thinkphp-setup/</guid>
-      <description>在 LEMP 安装配置完成的情况下
-thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
- 三、Git安装
-首先克隆下载应用项目仓库
-git clone https://github.com/top-think/think tp5
-然后切换到tp5目录下面，再克隆核心框架仓库：
-git clone https://github.com/top-think/framework thinkphp
- cd ~ git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
-nginx 配置 ThinkPHP5.1完全开发手册 -&amp;gt; 架构 -&amp;gt; URL访问 -&amp;gt; URL重写 -&amp;gt; [ Nginx ] https://www.kancloud.cn/manual/thinkphp5_1/353955#URL_22
-sudo vim /etc/nginx/sites-available/abc.xyz sudo nginx -t sudo service nginx status sudo service nginx restart sudo service nginx status  server { listen 80; root /home/annoy/tp5/public; index index.</description>
+      <description>https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/
+ 在 LEMP 安装配置完成的情况下
+ composer https://getcomposer.org/download/
+就在普通用户的家目录 /home/anony/ 下执行
+ Command-line installation
+php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&amp;quot; php -r &amp;quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&amp;quot; php composer-setup.php php -r &amp;quot;unlink(&#39;composer-setup.php&#39;);&amp;quot;  执行完成之后发现 /home/anony/ 下多了一个 composer.phar 文件
+ https://getcomposer.org/doc/00-intro.md#globally
+sudo mv composer.phar /usr/local/bin/composer  全局可用
+ comoser package mirror
+https://laravel-china.org/composer
+全局配置
+$ composer config -g repo.packagist composer https://packagist.</description>
     </item>
     
     <item>
