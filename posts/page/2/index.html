@@ -88,7 +88,7 @@
   </header>
 
 
-    <main class="pb7" role="main">
+    <main role="main">
       
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
   <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
@@ -219,11 +219,16 @@ npm install hexo-deployer-git --save  _config.yml
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      How to install LEMP on Ubuntu 18.04 How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 主要是按照这个文章来的
-Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux ubuntu 18 默认不允许 root 登陆
-ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-创建新用户 赋予sudo权限 &gt; sudo adduser robin &gt; sudo usermod -aG sudo robin  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/
-&gt; sudo ufw app list Available applications: OpenSSH &gt; sudo ufw allow OpenSSH &gt; sudo ufw enable &gt; sudo ufw status Status: active To Action From -- ------ ---- OpenSSH ALLOW Anywhere OpenSSH (v6) ALLOW Anywhere (v6) ```` #### ssh key 没用到 How to Set Up SSH Keys on Ubuntu 18.
+      How to install LEMP on Ubuntu 18.04 主要是按照这个文章来的
+How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux
+腾讯云的 ubuntu 18 默认不允许 root 登陆，可以用ubuntu登陆，我也不做修改
+而 digital ocean 的ubuntu 18 的droplet是可以root登陆ubuntu不可以登陆
+ssh ubuntu@your_server_ip   用ubuntu用户名登陆，完成一些初始化操作
+ Initial Server Setup with Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+创建新用户 赋予sudo权限 &gt; sudo adduser anony &gt; sudo usermod -aG sudo anony  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.
     </div>
   </div>
 </div>
@@ -302,11 +307,14 @@ ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.di
 
 
 <style>
+ 
 h3 {
 	background-color: cadetblue;
 	margin-left: -2rem;
+	padding-left: 0.5rem;
 }
 
+ 
 blockquote {
 	background-color:gainsboro;
 	border-left: 0.5rem solid skyblue;
@@ -318,12 +326,21 @@ blockquote > p {
 	margin: 0;
 }
 
+ 
 pre > code.hljs {
 	font-size: 1rem;
 }
 
+ 
 p > code {
 	background-color: azure;
+}
+
+ 
+.referral {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 </style>
 

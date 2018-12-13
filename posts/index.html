@@ -88,7 +88,7 @@
   </header>
 
 
-    <main class="pb7" role="main">
+    <main role="main">
       
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
   <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
@@ -382,11 +382,14 @@ sudo vim /etc/nginx/sites-available/abc.xyz sudo nginx -t sudo service nginx sta
 
 
 <style>
+ 
 h3 {
 	background-color: cadetblue;
 	margin-left: -2rem;
+	padding-left: 0.5rem;
 }
 
+ 
 blockquote {
 	background-color:gainsboro;
 	border-left: 0.5rem solid skyblue;
@@ -398,12 +401,21 @@ blockquote > p {
 	margin: 0;
 }
 
+ 
 pre > code.hljs {
 	font-size: 1rem;
 }
 
+ 
 p > code {
 	background-color: azure;
+}
+
+ 
+.referral {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 </style>
 
