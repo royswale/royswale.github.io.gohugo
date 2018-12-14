@@ -29,37 +29,52 @@
     
 
     <meta property="og:title" content="How to install LEMP on Ubuntu 18.04" />
-<meta property="og:description" content="How to install LEMP on Ubuntu 18.04 How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 主要是按照这个文章来的
-Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux ubuntu 18 默认不允许 root 登陆
-ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-创建新用户 赋予sudo权限 &gt; sudo adduser robin &gt; sudo usermod -aG sudo robin  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/
-&gt; sudo ufw app list Available applications: OpenSSH &gt; sudo ufw allow OpenSSH &gt; sudo ufw enable &gt; sudo ufw status Status: active To Action From -- ------ ---- OpenSSH ALLOW Anywhere OpenSSH (v6) ALLOW Anywhere (v6) ```` #### ssh key 没用到 How to Set Up SSH Keys on Ubuntu 18." />
+<meta property="og:description" content="How to install LEMP on Ubuntu 18.04 主要是按照这个文章来的
+How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux
+腾讯云的 ubuntu 18 默认不允许 root 登陆，可以用ubuntu登陆，我也不做修改
+而 digital ocean 的ubuntu 18 的droplet是可以root登陆ubuntu不可以登陆
+ssh ubuntu@your_server_ip   用ubuntu用户名登陆，完成一些初始化操作
+ Initial Server Setup with Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+创建新用户 赋予sudo权限 &gt; sudo adduser anony &gt; sudo usermod -aG sudo anony  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/" /><meta property="article:published_time" content="2018-12-06T11:44:23&#43;08:00"/>
 <meta property="article:modified_time" content="2018-12-06T11:44:23&#43;08:00"/>
 
 <meta itemprop="name" content="How to install LEMP on Ubuntu 18.04">
-<meta itemprop="description" content="How to install LEMP on Ubuntu 18.04 How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 主要是按照这个文章来的
-Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux ubuntu 18 默认不允许 root 登陆
-ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-创建新用户 赋予sudo权限 &gt; sudo adduser robin &gt; sudo usermod -aG sudo robin  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/
-&gt; sudo ufw app list Available applications: OpenSSH &gt; sudo ufw allow OpenSSH &gt; sudo ufw enable &gt; sudo ufw status Status: active To Action From -- ------ ---- OpenSSH ALLOW Anywhere OpenSSH (v6) ALLOW Anywhere (v6) ```` #### ssh key 没用到 How to Set Up SSH Keys on Ubuntu 18.">
+<meta itemprop="description" content="How to install LEMP on Ubuntu 18.04 主要是按照这个文章来的
+How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux
+腾讯云的 ubuntu 18 默认不允许 root 登陆，可以用ubuntu登陆，我也不做修改
+而 digital ocean 的ubuntu 18 的droplet是可以root登陆ubuntu不可以登陆
+ssh ubuntu@your_server_ip   用ubuntu用户名登陆，完成一些初始化操作
+ Initial Server Setup with Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+创建新用户 赋予sudo权限 &gt; sudo adduser anony &gt; sudo usermod -aG sudo anony  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.">
 
 
 <meta itemprop="datePublished" content="2018-12-06T11:44:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-06T11:44:23&#43;08:00" />
-<meta itemprop="wordCount" content="651">
+<meta itemprop="wordCount" content="844">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to install LEMP on Ubuntu 18.04"/>
-<meta name="twitter:description" content="How to install LEMP on Ubuntu 18.04 How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 主要是按照这个文章来的
-Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux ubuntu 18 默认不允许 root 登陆
-ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-创建新用户 赋予sudo权限 &gt; sudo adduser robin &gt; sudo usermod -aG sudo robin  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/
-&gt; sudo ufw app list Available applications: OpenSSH &gt; sudo ufw allow OpenSSH &gt; sudo ufw enable &gt; sudo ufw status Status: active To Action From -- ------ ---- OpenSSH ALLOW Anywhere OpenSSH (v6) ALLOW Anywhere (v6) ```` #### ssh key 没用到 How to Set Up SSH Keys on Ubuntu 18."/>
+<meta name="twitter:description" content="How to install LEMP on Ubuntu 18.04 主要是按照这个文章来的
+How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+Initial setup https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux
+腾讯云的 ubuntu 18 默认不允许 root 登陆，可以用ubuntu登陆，我也不做修改
+而 digital ocean 的ubuntu 18 的droplet是可以root登陆ubuntu不可以登陆
+ssh ubuntu@your_server_ip   用ubuntu用户名登陆，完成一些初始化操作
+ Initial Server Setup with Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+创建新用户 赋予sudo权限 &gt; sudo adduser anony &gt; sudo usermod -aG sudo anony  开启 ufw UFW Essentials: Common Firewall Rules and Commands https://www."/>
 
   </head>
 
@@ -102,7 +117,7 @@ ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.di
 
 
 
-    <main class="pb7" role="main">
+    <main role="main">
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
@@ -119,30 +134,41 @@ ssh ubuntu@your_server_ip  Initial Server Setup with Ubuntu 18.04 https://www.di
       
     </header>
 
+	
+	<div class="referral">
+		<a href="https://www.vultr.com/?ref=7700886"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a>
+	</div>
+
+
     
     <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l">
 
 <h2 id="how-to-install-lemp-on-ubuntu-18-04">How to install LEMP on Ubuntu 18.04</h2>
 
-<p>How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04
-<a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04</a>
-主要是按照这个文章来的</p>
+<p>主要是按照这个文章来的<br />
+How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu 18.04<br />
+<a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04</a></p>
 
 <h3 id="initial-setup">Initial setup</h3>
 
-<p><a href="https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux">https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux</a>
-ubuntu 18 默认不允许 root 登陆</p>
+<p><a href="https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux">https://linuxconfig.org/allow-ssh-root-login-on-ubuntu-18-04-bionic-beaver-linux</a><br />
+腾讯云的 ubuntu 18 默认不允许 root 登陆，可以用ubuntu登陆，我也不做修改<br />
+而 digital ocean 的ubuntu 18 的droplet是可以root登陆ubuntu不可以登陆</p>
 
 <pre><code class="language-bash">ssh ubuntu@your_server_ip
 </code></pre>
 
-<p>Initial Server Setup with Ubuntu 18.04
+<blockquote>
+<p>用ubuntu用户名登陆，完成一些初始化操作</p>
+</blockquote>
+
+<p>Initial Server Setup with Ubuntu 18.04<br />
 <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04</a></p>
 
 <h4 id="创建新用户-赋予sudo权限">创建新用户 赋予sudo权限</h4>
 
-<pre><code class="language-bash">&gt; sudo adduser robin
-&gt; sudo usermod -aG sudo robin
+<pre><code class="language-bash">&gt; sudo adduser anony
+&gt; sudo usermod -aG sudo anony
 </code></pre>
 
 <h4 id="开启-ufw">开启 ufw</h4>
@@ -151,12 +177,17 @@ ubuntu 18 默认不允许 root 登陆</p>
 <a href="https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands">https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands</a>
 <a href="https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/">https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/</a></p>
 
-<pre><code class="language-bash">&gt; sudo ufw app list
+<pre><code class="language-bash">&gt; sudo ufw status
+Status: inactive
+&gt; sudo ufw app list
 Available applications:
   OpenSSH
-
 &gt; sudo ufw allow OpenSSH
+Rules updated
+Rules updated (v6)
 &gt; sudo ufw enable
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
+Firewall is active and enabled on system startup
 &gt; sudo ufw status
 Status: active
 
@@ -164,23 +195,25 @@ To                         Action      From
 --                         ------      ----
 OpenSSH                    ALLOW       Anywhere
 OpenSSH (v6)               ALLOW       Anywhere (v6)
-````
 
-#### ssh key 没用到
+</code></pre>
 
-How to Set Up SSH Keys on Ubuntu 18.04
-https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804
+<h4 id="ssh-key-authentication">SSH Key Authentication</h4>
 
+<blockquote>
+<p>这个未配置</p>
+</blockquote>
 
+<p>How to Set Up SSH Keys on Ubuntu 18.04<br />
+<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804">https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804</a></p>
 
-### Nginx
+<h3 id="nginx">Nginx</h3>
 
-用上面创建的新用户 登陆，完成后续操作
+<p>用上面创建的新用户 <code>anony</code> 登陆，完成后续操作</p>
 
-#### install nginx
+<h4 id="install-nginx">install nginx</h4>
 
-```bash
-&gt; sudo apt update
+<pre><code class="language-bash">&gt; sudo apt update
 &gt; sudo apt install nginx
 &gt; sudo service nginx status
 </code></pre>
@@ -189,8 +222,15 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubunt
 
 <blockquote>
 <p>It is recommended that you enable the most restrictive profile that will still allow the traffic you want. Since you haven&rsquo;t configured SSL for your server in this guide, you will only need to allow traffic on port 80.</p>
+</blockquote>
 
-<p>ssl 和 HTTPS 以后再配置</p>
+<p>注意<br />
+How To Secure Nginx with Let&rsquo;s Encrypt on Ubuntu 18.04<br />
+<a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04</a></p>
+
+<blockquote>
+<p>ssl 和 HTTPS 以后再配置<br />
+配置HTTPS证书的时候，别忘了 <code>sudo ufw allow 'Nginx HTTPS'</code></p>
 </blockquote>
 
 <pre><code class="language-bash">&gt; sudo ufw app list
@@ -199,7 +239,6 @@ Available applications:
   Nginx HTTP
   Nginx HTTPS
   OpenSSH
-
 &gt; sudo ufw status
 Status: active
 
@@ -227,19 +266,22 @@ Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 
 <h4 id="hide-nginx-version">hide nginx version</h4>
 
-<p>How to Hide Nginx Server Version in Linux
+<p>How to Hide Nginx Server Version in Linux<br />
 <a href="https://www.tecmint.com/hide-nginx-server-version-in-linux/">https://www.tecmint.com/hide-nginx-server-version-in-linux/</a></p>
 
 <pre><code class="language-bash">&gt; sudo vi /etc/nginx/nginx.conf
-
 # add or uncomment this line
 server_tokens off;
+&gt; sudo nginx -t
+&gt; sudo service nginx status
+&gt; sudo service nginx restart
+&gt; sudo service nginx status
 </code></pre>
 
 <h3 id="mysql">MySQL</h3>
 
-<p>Step 2 – Installing MySQL to Manage Site Data
-<a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04</a></p>
+<p>Step 2 – Installing MySQL to Manage Site Data<br />
+<a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04#step-2-%E2%80%93-installing-mysql-to-manage-site-data">https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04#step-2-%E2%80%93-installing-mysql-to-manage-site-data</a></p>
 
 <pre><code class="language-bash">&gt; sudo apt install mysql-server
 &gt; sudo mysql_secure_installation
@@ -253,8 +295,9 @@ left option all answer y
 <p>Note that in Ubuntu systems running MySQL 5.7 (and later versions), the root MySQL user is set to authenticate using the auth_socket plugin by default rather than with a password.</p>
 </blockquote>
 
-<p>我没有修改这个默认方式
-以上安装过程是按照上面的 digitalocean 的文章来的，下面不是</p>
+<p>我没有修改这个默认方式，mysql 的 root 用户还是用 auth_socket</p>
+
+<p>以上mysql安装过程是按照上面的 digitalocean 的文章来的，下面不是</p>
 
 <pre><code class="language-bash">&gt; sudo mysql
 </code></pre>
@@ -288,12 +331,9 @@ mysql&gt; exit;
 <a href="https://www.digitalocean.com/community/questions/how-do-i-open-port-3306-with-ufw">https://www.digitalocean.com/community/questions/how-do-i-open-port-3306-with-ufw</a></p>
 
 <pre><code class="language-bash">&gt; sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
-
 # bind-address = 127.0.0.1
 bind-address = 0.0.0.0
-</code></pre>
-
-<pre><code class="language-bash">&gt; sudo service mysql status
+&gt; sudo service mysql status
 &gt; sudo service mysql restart
 </code></pre>
 
@@ -302,7 +342,6 @@ bind-address = 0.0.0.0
 <p><a href="https://www.spritle.com/blogs/2015/02/25/how-to-enable-mysql-for-remote-access/">https://www.spritle.com/blogs/2015/02/25/how-to-enable-mysql-for-remote-access/</a></p>
 
 <pre><code class="language-bash">&gt; sudo ufw status verbose
-
 Status: active
 Logging: on (low)
 Default: deny (incoming), allow (outgoing), disabled (routed)
@@ -314,6 +353,7 @@ To                         Action      From
 80/tcp (Nginx HTTP)        ALLOW IN    Anywhere
 22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)
 80/tcp (Nginx HTTP (v6))   ALLOW IN    Anywhere (v6)
+
 </code></pre>
 
 <p>test if can access 3306 port</p>
@@ -324,13 +364,9 @@ Trying your_server_ip...
 </code></pre>
 
 <pre><code class="language-bash">&gt; sudo ufw allow 3306
-
 Rule added
 Rule added (v6)
-</code></pre>
-
-<pre><code class="language-bash">&gt; sudo ufw status
-
+&gt; sudo ufw status
 Status: active
 
 To                         Action      From
@@ -341,6 +377,7 @@ Nginx HTTP                 ALLOW       Anywhere
 OpenSSH (v6)               ALLOW       Anywhere (v6)
 Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 3306 (v6)                  ALLOW       Anywhere (v6)
+
 </code></pre>
 
 <pre><code class="language-bash">&gt; telnet your_server_ip 3306
@@ -351,19 +388,84 @@ Connected to your_server_ip.
 
 <p>这时用 Navicat Premium 也可以连接上这个用户的数据库了</p>
 
-<p>bingo</p>
-
 <h3 id="php">PHP</h3>
 
-<p>Step 3 – Installing PHP and Configuring Nginx to Use the PHP Processor
+<p>Step 3 – Installing PHP and Configuring Nginx to Use the PHP Processor<br />
 <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04#step-3-%E2%80%93-installing-php-and-configuring-nginx-to-use-the-php-processor">https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04#step-3-%E2%80%93-installing-php-and-configuring-nginx-to-use-the-php-processor</a></p>
+
+<ol>
+<li><p>install php</p>
+
+<pre><code class="language-bash">sudo apt update
+sudo apt install php-fpm php-mysql
+</code></pre></li>
+
+<li><p>add new server block</p>
+
+<pre><code class="language-bash">sudo vi /etc/nginx/sites-available/example.com
+</code></pre>
+
+<pre><code class="language-nginx">server {
+    listen 80;
+    root /var/www/html;
+    index index.php index.html index.htm index.nginx-debian.html;
+    server_name example.com;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+</code></pre>
+
+<p>Enable your new server block by creating a symbolic link from your new server block configuration file (in the /etc/nginx/sites-available/ directory) to the /etc/nginx/sites-enabled/ directory:</p>
+
+<pre><code class="language-bash">sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+</code></pre>
+
+<p>Then, unlink the default configuration file from the /sites-enabled/ directory:</p>
+
+<pre><code class="language-bash">sudo unlink /etc/nginx/sites-enabled/default
+</code></pre>
+
+<p>test your configuration and restart</p>
+
+<pre><code class="language-bash">sudo nginx -t
+sudo service nginx restart
+sudo service nginx status
+</code></pre>
+
+<p>最后用info.php测试一下</p>
+
+<pre><code class="language-php">&lt;?php
+phpinfo();
+</code></pre></li>
+</ol>
+
+<p>Bingo!</p>
 <ul class="pa0">
   
 </ul>
 <div class="mt6">
         
       </div>
-    </main>
+	</main>
+	
+	
+	<div class="referral">
+		<a class="ma3" href="https://www.vultr.com/?ref=7700886"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a>
+		<a class="ma3" href="https://m.do.co/c/8a078a8e03fb"><img src="http://qiniu.xingtan.xyz/DO_Logo_Horizontal_Blue.png" height="90" alt=""></a>
+		<a class="ma3" href="https://bandwagonhost.com/aff.php?aff=9441"><img src="http://qiniu.xingtan.xyz/bandwagonhost.png" alt=""></a>
+		<a class="ma3" href="https://portal.qiniu.com/signup?code=3lmr0pb0te91u"><img src="https://mars-assets.qnssl.com/qiniulog/img-slogan-blue-en.png" alt=""></a>
+	</div>
 
     <aside class="w-30-l mt6-l">
 
@@ -397,6 +499,47 @@ Connected to your_server_ip.
 </div>
   </div>
 </footer>
+
+
+
+<style>
+ 
+h3 {
+	background-color: cadetblue;
+	margin-left: -2rem;
+	padding-left: 0.5rem;
+}
+
+ 
+blockquote {
+	background-color:gainsboro;
+	border-left: 0.5rem solid skyblue;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	font-style: italic;
+}
+blockquote > p {
+	margin: 0;
+}
+
+ 
+pre > code.hljs {
+	font-size: 1rem;
+}
+
+ 
+p > code {
+	background-color: azure;
+}
+
+ 
+.referral {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+</style>
+
 
 <link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>

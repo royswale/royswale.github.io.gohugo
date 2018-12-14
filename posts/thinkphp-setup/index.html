@@ -29,58 +29,58 @@
     
 
     <meta property="og:title" content="Thinkphp Setup" />
-<meta property="og:description" content="在 LEMP 安装配置完成的情况下
-thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
- 三、Git安装
-首先克隆下载应用项目仓库
-git clone https://github.com/top-think/think tp5
-然后切换到tp5目录下面，再克隆核心框架仓库：
-git clone https://github.com/top-think/framework thinkphp
- git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
-composer https://getcomposer.org/download/
+<meta property="og:description" content="https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/
+ 在 LEMP 安装配置完成的情况下
+ composer https://getcomposer.org/download/
 就在普通用户的家目录 /home/anony/ 下执行
  Command-line installation
-php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup." />
+php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup.php php -r &quot;unlink(&#39;composer-setup.php&#39;);&quot;  执行完成之后发现 /home/anony/ 下多了一个 composer.phar 文件
+ https://getcomposer.org/doc/00-intro.md#globally
+sudo mv composer.phar /usr/local/bin/composer  全局可用
+ comoser package mirror
+https://laravel-china.org/composer
+全局配置
+$ composer config -g repo.packagist composer https://packagist." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://royswale.github.io/posts/thinkphp-setup/" /><meta property="article:published_time" content="2018-12-10T19:30:36&#43;08:00"/>
 <meta property="article:modified_time" content="2018-12-10T19:30:36&#43;08:00"/>
 
 <meta itemprop="name" content="Thinkphp Setup">
-<meta itemprop="description" content="在 LEMP 安装配置完成的情况下
-thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
- 三、Git安装
-首先克隆下载应用项目仓库
-git clone https://github.com/top-think/think tp5
-然后切换到tp5目录下面，再克隆核心框架仓库：
-git clone https://github.com/top-think/framework thinkphp
- git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
-composer https://getcomposer.org/download/
+<meta itemprop="description" content="https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/
+ 在 LEMP 安装配置完成的情况下
+ composer https://getcomposer.org/download/
 就在普通用户的家目录 /home/anony/ 下执行
  Command-line installation
-php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup.">
+php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup.php php -r &quot;unlink(&#39;composer-setup.php&#39;);&quot;  执行完成之后发现 /home/anony/ 下多了一个 composer.phar 文件
+ https://getcomposer.org/doc/00-intro.md#globally
+sudo mv composer.phar /usr/local/bin/composer  全局可用
+ comoser package mirror
+https://laravel-china.org/composer
+全局配置
+$ composer config -g repo.packagist composer https://packagist.">
 
 
 <meta itemprop="datePublished" content="2018-12-10T19:30:36&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-10T19:30:36&#43;08:00" />
-<meta itemprop="wordCount" content="171">
+<meta itemprop="wordCount" content="386">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Thinkphp Setup"/>
-<meta name="twitter:description" content="在 LEMP 安装配置完成的情况下
-thinkphp https://www.kancloud.cn/manual/thinkphp5/118006
- 三、Git安装
-首先克隆下载应用项目仓库
-git clone https://github.com/top-think/think tp5
-然后切换到tp5目录下面，再克隆核心框架仓库：
-git clone https://github.com/top-think/framework thinkphp
- git clone https://gitee.com/liu21st/thinkphp5 tp5 cd tp5 git clone https://gitee.com/liu21st/framework.git thinkphp composer update  别忘了在 tp5 目录下执行 composer update 安装扩展包
-composer https://getcomposer.org/download/
+<meta name="twitter:description" content="https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/
+ 在 LEMP 安装配置完成的情况下
+ composer https://getcomposer.org/download/
 就在普通用户的家目录 /home/anony/ 下执行
  Command-line installation
-php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup."/>
+php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot; php -r &quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot; php composer-setup.php php -r &quot;unlink(&#39;composer-setup.php&#39;);&quot;  执行完成之后发现 /home/anony/ 下多了一个 composer.phar 文件
+ https://getcomposer.org/doc/00-intro.md#globally
+sudo mv composer.phar /usr/local/bin/composer  全局可用
+ comoser package mirror
+https://laravel-china.org/composer
+全局配置
+$ composer config -g repo.packagist composer https://packagist."/>
 
   </head>
 
@@ -123,7 +123,7 @@ php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-set
 
 
 
-    <main class="pb7" role="main">
+    <main role="main">
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
@@ -140,32 +140,22 @@ php -r &quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-set
       
     </header>
 
+	
+	<div class="referral">
+		<a href="https://www.vultr.com/?ref=7700886"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a>
+	</div>
+
+
     
     <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-100-l">
 
-<p>在 LEMP 安装配置完成的情况下</p>
-
-<h4 id="thinkphp">thinkphp</h4>
-
-<p><a href="https://www.kancloud.cn/manual/thinkphp5/118006">https://www.kancloud.cn/manual/thinkphp5/118006</a></p>
+<p><a href="https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/">https://royswale.github.io/posts/how-to-install-lemp-on-ubuntu-18-04/</a></p>
 
 <blockquote>
-<p>三、Git安装<br />
- 首先克隆下载应用项目仓库<br />
- git clone <a href="https://github.com/top-think/think">https://github.com/top-think/think</a> tp5<br />
- 然后切换到tp5目录下面，再克隆核心框架仓库：<br />
- git clone <a href="https://github.com/top-think/framework">https://github.com/top-think/framework</a> thinkphp</p>
+<p>在 LEMP 安装配置完成的情况下</p>
 </blockquote>
 
-<pre><code class="language-bash">git clone https://gitee.com/liu21st/thinkphp5 tp5
-cd tp5
-git clone https://gitee.com/liu21st/framework.git thinkphp
-composer update
-</code></pre>
-
-<p>别忘了在 <code>tp5</code> 目录下执行 <code>composer update</code> 安装扩展包</p>
-
-<h4 id="composer">composer</h4>
+<h3 id="composer">composer</h3>
 
 <p><a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></p>
 
@@ -184,7 +174,7 @@ php -r &quot;unlink('composer-setup.php');&quot;
 
 <li><p><a href="https://getcomposer.org/doc/00-intro.md#globally">https://getcomposer.org/doc/00-intro.md#globally</a></p>
 
-<pre><code class="language-bash">mv composer.phar /usr/local/bin/composer
+<pre><code class="language-bash">sudo mv composer.phar /usr/local/bin/composer
 </code></pre>
 
 <p>全局可用</p></li>
@@ -198,24 +188,80 @@ php -r &quot;unlink('composer-setup.php');&quot;
 <pre><code class="language-bash">$ composer config -g repo.packagist composer https://packagist.laravel-china.org
 </code></pre>
 
-<p>还是以普通用户执行这条命令，
-后期composer的缓存目录的权限属于该用户</p></li>
+<p>还是以普通用户 不加 sudo 执行这条命令，<br />
+所以composer的缓存目录 <code>/home/annoy/.config/composer/</code> 的权限属于该用户</p></li>
 </ol>
 
-<h4 id="nginx-配置">nginx 配置</h4>
+<h3 id="thinkphp">thinkphp</h3>
+
+<p><a href="https://www.kancloud.cn/manual/thinkphp5/118006">https://www.kancloud.cn/manual/thinkphp5/118006</a></p>
+
+<blockquote>
+<p>三、Git安装<br />
+ 首先克隆下载应用项目仓库<br />
+ git clone <a href="https://github.com/top-think/think">https://github.com/top-think/think</a> tp5<br />
+ 然后切换到tp5目录下面，再克隆核心框架仓库：<br />
+ git clone <a href="https://github.com/top-think/framework">https://github.com/top-think/framework</a> thinkphp</p>
+</blockquote>
+
+<pre><code class="language-bash">cd ~
+git clone https://gitee.com/liu21st/thinkphp5 tp5
+cd tp5
+git clone https://gitee.com/liu21st/framework.git thinkphp
+composer update
+</code></pre>
+
+<p>别忘了在 <code>tp5</code> 目录下执行 <code>composer update</code> 安装扩展包</p>
+
+<h3 id="nginx-配置">nginx 配置</h3>
+
+<p>ThinkPHP5.1完全开发手册 -&gt; 架构 -&gt; URL访问 -&gt; URL重写 -&gt; [ Nginx ]
+<a href="https://www.kancloud.cn/manual/thinkphp5_1/353955#URL_22">https://www.kancloud.cn/manual/thinkphp5_1/353955#URL_22</a></p>
+
+<pre><code class="language-bash">sudo vim /etc/nginx/sites-available/example.com
+
+sudo nginx -t
+sudo service nginx status
+sudo service nginx restart
+sudo service nginx status
+</code></pre>
+
+<pre><code class="language-nginx">server {
+    listen 80;
+    root /home/annoy/tp5/public;
+    index index.php index.html index.htm;
+    server_name example.com;
+
+    location / {
+        # try_files $uri $uri/ =404;
+        # try_files $uri /index.php$is_args$args;
+        if (!-e $request_filename) {
+            rewrite  ^(.*)$  /index.php?s=/$1  last;
+        }
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+</code></pre>
+
+<p>其它一些关于nginx配置thinkphp的文章<br />
+参考, 未使用</p>
 
 <p><a href="https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony">https://gitee.com/royswale/nginx-config-tencent/blob/master/sites-available/default.backup.symfony</a></p>
 
-<p>老朱亲自写的,最完美ThinkPHP Nginx 配置文件
-<a href="http://www.thinkphp.cn/topic/34380.html">http://www.thinkphp.cn/topic/34380.html</a></p>
-
-<p><a href="https://www.jianshu.com/p/018e5d0337a4">https://www.jianshu.com/p/018e5d0337a4</a></p>
-
-<p><a href="https://blog.csdn.net/voke_/article/details/79756886">https://blog.csdn.net/voke_/article/details/79756886</a></p>
-
-<p><a href="http://www.thinkphp.cn/topic/40391.html">http://www.thinkphp.cn/topic/40391.html</a></p>
-
-<p><a href="https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/">https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/</a></p>
+<p>老朱亲自写的,最完美ThinkPHP Nginx 配置文件<br />
+<a href="http://www.thinkphp.cn/topic/34380.html">http://www.thinkphp.cn/topic/34380.html</a><br />
+<a href="https://www.jianshu.com/p/018e5d0337a4">https://www.jianshu.com/p/018e5d0337a4</a><br />
+<a href="https://blog.csdn.net/voke_/article/details/79756886">https://blog.csdn.net/voke_/article/details/79756886</a><br />
+<a href="http://www.thinkphp.cn/topic/40391.html">http://www.thinkphp.cn/topic/40391.html</a><br />
+<a href="https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/">https://www.oliverdavies.uk/blog/nginx-redirects-with-query-string-arguments/</a></p>
 
 <h4 id="apache-修改-public-htaccess-即可">Apache 修改 public/.htaccess 即可</h4>
 
@@ -241,49 +287,141 @@ composer require overtrue/wechat -vvv
 <pre><code class="language-bash">sudo apt install php7.2-xml
 </code></pre>
 
-<p>访问微信授权接口，报错</p>
+<p>然后再次安装 easywechat</p>
+
+<h3 id="使用-easywechat-thinkphp-来验证微信接口">使用 easywechat + thinkphp 来验证微信接口</h3>
+
+<pre><code class="language-bash">&gt; cd ~/tp5/
+&gt; cp -r application/index/ application/weixin
+&gt; cd application/weixin/controller/
+&gt; vi Index.php
+</code></pre>
+
+<p><a href="https://www.easywechat.com/docs/master/official-account/tutorial">https://www.easywechat.com/docs/master/official-account/tutorial</a><br />
+<a href="https://www.easywechat.com/docs/master/official-account/configuration">https://www.easywechat.com/docs/master/official-account/configuration</a></p>
+
+<p>easyWeChat 验证微信 token<br />
+<a href="https://blog.csdn.net/frank_hanhan/article/details/80972192">https://blog.csdn.net/frank_hanhan/article/details/80972192</a></p>
+
+<pre><code class="language-php">// ~/tp5/application/weixin/controller/Index.php
+&lt;?php
+namespace app\weixin\controller;
+
+use think\facade\Env;
+use EasyWeChat\Factory;
+
+class Index
+{
+    public function index()
+    {
+        $config = [
+            'app_id' =&gt; '',
+            'secret' =&gt; '',
+            'token' =&gt; '',
+            'aes_key' =&gt; '',
+            'response_type' =&gt; 'array',
+ 
+            'log' =&gt; [
+                'level' =&gt; 'debug',
+                // 'file' =&gt; __DIR__.'/../../wechat.log',
+                'file' =&gt; Env::get('runtime_path') .'wechat/wechat.log',
+            ],
+        ];
+ 
+        $app = Factory::officialAccount($config);
+        $response = $app-&gt;server-&gt;serve();
+        $response-&gt;send(); // Laravel 里请使用：return $response;
+    }
+}
+</code></pre>
+
+<p>访问微信授权接口地址，报错，上面代码总配置的日志文件不存在</p>
 
 <blockquote>
 <p>&hellip;wechat.log&rdquo; could not be opened: failed to open stream: Permission denied</p>
 </blockquote>
 
-<pre><code class="language-bash">touch tp5/application/wechat.log
-chmod a+rw wechat.log
+<pre><code class="language-bash">&gt; cd ~/tp5
+&gt; mkdir runtime/wechat
+&gt; touch runtime/wechat/wechat.log
+&gt; chmod a+rw runtime/wechat/wechat.log
 </code></pre>
 
-<p><a href="https://www.easywechat.com/docs/master/installation">https://www.easywechat.com/docs/master/installation</a></p>
+<blockquote>
+<p>安全模式，验证成功</p>
+</blockquote>
 
-<p>SDK 基础：EasyWeChat 的安装<br />
-<a href="https://www.easywechat.com/lessons/1">https://www.easywechat.com/lessons/1</a></p>
+<p>参考，未使用<br />
+<a href="https://www.easywechat.com/docs/master/installation">https://www.easywechat.com/docs/master/installation</a><br />
+SDK 基础：EasyWeChat 的安装<br />
+<a href="https://www.easywechat.com/lessons/1">https://www.easywechat.com/lessons/1</a><br />
+YII2中服务器端验证总是失败..<br />
+<a href="https://github.com/overtrue/wechat/issues/1245">https://github.com/overtrue/wechat/issues/1245</a><br />
+<a href="https://github.com/qiqizjl/think-wechat">https://github.com/qiqizjl/think-wechat</a></p>
 
-<p>easyWeChat 验证微信 token<br />
-<a href="https://blog.csdn.net/frank_hanhan/article/details/80972192">https://blog.csdn.net/frank_hanhan/article/details/80972192</a></p>
+<h3 id="thinkphp-5-1-x-配置">ThinkPHP 5.1.x 配置</h3>
 
-<p>YII2中服务器端验证总是失败..
-<a href="https://github.com/overtrue/wechat/issues/1245">https://github.com/overtrue/wechat/issues/1245</a></p>
+<p>ThinkPHP5.1完全开发手册<br />
+<a href="https://www.kancloud.cn/manual/thinkphp5_1/353946">https://www.kancloud.cn/manual/thinkphp5_1/353946</a></p>
 
-<p><a href="https://github.com/qiqizjl/think-wechat">https://github.com/qiqizjl/think-wechat</a></p>
+<ol>
+<li><p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353991">请求 -&gt; 参数绑定</a></p>
 
-<p>服务器上安装的thinkphp版本是5.1.x的，这个文档是5.0的
-<a href="https://www.kancloud.cn/manual/thinkphp5/118019">https://www.kancloud.cn/manual/thinkphp5/118019</a></p>
+<blockquote>
+<p>在使用路由定义的情况下 不建议使用顺序绑定<br />
+URL参数方式改成顺序解析 &lsquo;url_param_type&rsquo;         =&gt; 1</p>
+</blockquote>
+
+<p>所以这个配置保留默认0, 参数绑定方式默认是按照变量名进行绑定</p></li>
+
+<li><p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353960">路由</a></p>
+
+<blockquote>
+<p>ThinkPHP5.1的路由定义更加对象化，并且默认开启路由（不能关闭），如果一个URL没有定义路由，则采用默认的PATH_INFO 模式访问URL</p>
+</blockquote></li>
+
+<li><p>系统常量</p>
+
+<p>thinkphp 5.1.x 系统常量用 Env::get(&lsquo;runtime_path&rsquo;) 来获取</p>
+
+<p><img src="http://qiniu.xingtan.xyz/2018-12-12-17-08-45-2018121217845.png" alt="2018-12-12-17-08-45-2018121217845" /></p></li>
+</ol>
 
 <h3 id="微信小程序商城构建全栈应用">微信小程序商城构建全栈应用</h3>
 
-<p>全部文件&gt;微信小程序商城构建全栈应用（下&hellip;&gt;第9章微信登陆与令牌</p>
-
-<p>8-14 开启路由完整匹配模式</p>
+<p>百度云&gt;全部文件&gt;微信小程序商城构建全栈应用（下&hellip;&gt;第9章微信登陆与令牌</p>
 
 <p><a href="https://coding.imooc.com/class/chapter/97.html#Anchor">https://coding.imooc.com/class/chapter/97.html#Anchor</a></p>
 
-<p>关联预载入<br />
-<a href="https://www.kancloud.cn/manual/thinkphp5/139045">https://www.kancloud.cn/manual/thinkphp5/139045</a></p>
+<h3 id="微信接口授权成功">微信接口授权成功</h3>
+
+<p>开发者工具，在线调试接口</p>
+
+<p>微信公众平台接口测试帐号申请<br />
+<a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login">https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login</a></p>
+
+<p><img src="http://qiniu.xingtan.xyz/2018-12-12-17-03-10-2018121217311.png" alt="2018-12-12-17-03-10-2018121217311" /></p>
+
+<h3 id="chroma">Chroma</h3>
+
+<p>还是用这个来高亮代码比较好，方便设置行号，高亮指定行</p>
+
+<p><a href="https://github.com/alecthomas/chroma">https://github.com/alecthomas/chroma</a></p>
 <ul class="pa0">
   
 </ul>
 <div class="mt6">
         
       </div>
-    </main>
+	</main>
+	
+	
+	<div class="referral">
+		<a class="ma3" href="https://www.vultr.com/?ref=7700886"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a>
+		<a class="ma3" href="https://m.do.co/c/8a078a8e03fb"><img src="http://qiniu.xingtan.xyz/DO_Logo_Horizontal_Blue.png" height="90" alt=""></a>
+		<a class="ma3" href="https://bandwagonhost.com/aff.php?aff=9441"><img src="http://qiniu.xingtan.xyz/bandwagonhost.png" alt=""></a>
+		<a class="ma3" href="https://portal.qiniu.com/signup?code=3lmr0pb0te91u"><img src="https://mars-assets.qnssl.com/qiniulog/img-slogan-blue-en.png" alt=""></a>
+	</div>
 
     <aside class="w-30-l mt6-l">
 
@@ -317,6 +455,47 @@ chmod a+rw wechat.log
 </div>
   </div>
 </footer>
+
+
+
+<style>
+ 
+h3 {
+	background-color: cadetblue;
+	margin-left: -2rem;
+	padding-left: 0.5rem;
+}
+
+ 
+blockquote {
+	background-color:gainsboro;
+	border-left: 0.5rem solid skyblue;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	font-style: italic;
+}
+blockquote > p {
+	margin: 0;
+}
+
+ 
+pre > code.hljs {
+	font-size: 1rem;
+}
+
+ 
+p > code {
+	background-color: azure;
+}
+
+ 
+.referral {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+</style>
+
 
 <link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/solarized-dark.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
