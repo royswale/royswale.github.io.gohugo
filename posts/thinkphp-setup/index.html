@@ -62,7 +62,7 @@ $ composer config -g repo.packagist composer https://packagist.">
 
 <meta itemprop="datePublished" content="2018-12-10T19:30:36&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-10T19:30:36&#43;08:00" />
-<meta itemprop="wordCount" content="386">
+<meta itemprop="wordCount" content="549">
 
 
 
@@ -269,13 +269,45 @@ sudo service nginx status
 
 <p><a href="https://blog.csdn.net/lw545034502/article/details/79374611">https://blog.csdn.net/lw545034502/article/details/79374611</a></p>
 
+<pre><code class="language-apache">
+</code></pre>
+
+<h3 id="thinkphp-5-1-x-配置">ThinkPHP 5.1.x 配置</h3>
+
+<p>ThinkPHP5.1完全开发手册<br />
+<a href="https://www.kancloud.cn/manual/thinkphp5_1/353946">https://www.kancloud.cn/manual/thinkphp5_1/353946</a></p>
+
+<ol>
+<li><p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353991">请求 -&gt; 参数绑定</a></p>
+
+<blockquote>
+<p>在使用路由定义的情况下 不建议使用顺序绑定<br />
+URL参数方式改成顺序解析 &lsquo;url_param_type&rsquo;         =&gt; 1</p>
+</blockquote>
+
+<p>所以这个配置保留默认0, 参数绑定方式默认是按照变量名进行绑定</p></li>
+
+<li><p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353960">路由</a></p>
+
+<blockquote>
+<p>ThinkPHP5.1的路由定义更加对象化，并且默认开启路由（不能关闭），如果一个URL没有定义路由，则采用默认的PATH_INFO 模式访问URL</p>
+</blockquote></li>
+
+<li><p>系统常量</p>
+
+<p>thinkphp 5.1.x 系统常量用 <code>Env::get('runtime_path')</code> 来获取</p>
+
+<p><img src="http://qiniu.xingtan.xyz/2018-12-12-17-08-45-2018121217845.png" alt="2018-12-12-17-08-45-2018121217845" /></p></li>
+</ol>
+
 <h3 id="easywechat">easywechat</h3>
 
 <p>在 tp5 目录下安装 easywechat</p>
 
 <p><a href="https://www.easywechat.com/docs/master/installation">https://www.easywechat.com/docs/master/installation</a></p>
 
-<pre><code class="language-bash">which composer
+<pre><code class="language-bash">cd ~/tp5
+which composer
 composer require overtrue/wechat -vvv
 </code></pre>
 
@@ -289,7 +321,11 @@ composer require overtrue/wechat -vvv
 
 <p>然后再次安装 easywechat</p>
 
-<h3 id="使用-easywechat-thinkphp-来验证微信接口">使用 easywechat + thinkphp 来验证微信接口</h3>
+<pre><code class="language-bash">composer require overtrue/wechat -vvv
+composer update
+</code></pre>
+
+<h4 id="使用-easywechat-thinkphp-来验证微信接口">使用 easywechat + thinkphp 来验证微信接口</h4>
 
 <pre><code class="language-bash">&gt; cd ~/tp5/
 &gt; cp -r application/index/ application/weixin
@@ -315,12 +351,13 @@ class Index
     public function index()
     {
         $config = [
-            'app_id' =&gt; '',
-            'secret' =&gt; '',
-            'token' =&gt; '',
-            'aes_key' =&gt; '',
+            'app_id'  =&gt; 'xxxxxxxxxxx',
+            'secret'  =&gt; 'xxxxxxxxxxx',
+            'token'   =&gt; 'xxxxxxxxxxx',
+            'aes_key' =&gt; 'xxxxxxxxxxx',
+
             'response_type' =&gt; 'array',
- 
+
             'log' =&gt; [
                 'level' =&gt; 'debug',
                 // 'file' =&gt; __DIR__.'/../../wechat.log',
@@ -335,11 +372,13 @@ class Index
 }
 </code></pre>
 
-<p>访问微信授权接口地址，报错，上面代码总配置的日志文件不存在</p>
+<p>访问微信授权接口地址，报错，</p>
 
 <blockquote>
 <p>&hellip;wechat.log&rdquo; could not be opened: failed to open stream: Permission denied</p>
 </blockquote>
+
+<p>上面代码中配置的日志文件 <code>Env::get('runtime_path') .'wechat/wechat.log'</code> 不存在</p>
 
 <pre><code class="language-bash">&gt; cd ~/tp5
 &gt; mkdir runtime/wechat
@@ -348,7 +387,8 @@ class Index
 </code></pre>
 
 <blockquote>
-<p>安全模式，验证成功</p>
+<p><a href="http://example.com/weixin/">http://example.com/weixin/</a><br />
+安全模式，验证成功</p>
 </blockquote>
 
 <p>参考，未使用<br />
@@ -359,48 +399,115 @@ YII2中服务器端验证总是失败..<br />
 <a href="https://github.com/overtrue/wechat/issues/1245">https://github.com/overtrue/wechat/issues/1245</a><br />
 <a href="https://github.com/qiqizjl/think-wechat">https://github.com/qiqizjl/think-wechat</a></p>
 
-<h3 id="thinkphp-5-1-x-配置">ThinkPHP 5.1.x 配置</h3>
+<h3 id="微信开发">微信开发</h3>
 
-<p>ThinkPHP5.1完全开发手册<br />
-<a href="https://www.kancloud.cn/manual/thinkphp5_1/353946">https://www.kancloud.cn/manual/thinkphp5_1/353946</a></p>
-
-<ol>
-<li><p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353991">请求 -&gt; 参数绑定</a></p>
-
-<blockquote>
-<p>在使用路由定义的情况下 不建议使用顺序绑定<br />
-URL参数方式改成顺序解析 &lsquo;url_param_type&rsquo;         =&gt; 1</p>
-</blockquote>
-
-<p>所以这个配置保留默认0, 参数绑定方式默认是按照变量名进行绑定</p></li>
-
-<li><p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353960">路由</a></p>
-
-<blockquote>
-<p>ThinkPHP5.1的路由定义更加对象化，并且默认开启路由（不能关闭），如果一个URL没有定义路由，则采用默认的PATH_INFO 模式访问URL</p>
-</blockquote></li>
-
-<li><p>系统常量</p>
-
-<p>thinkphp 5.1.x 系统常量用 Env::get(&lsquo;runtime_path&rsquo;) 来获取</p>
-
-<p><img src="http://qiniu.xingtan.xyz/2018-12-12-17-08-45-2018121217845.png" alt="2018-12-12-17-08-45-2018121217845" /></p></li>
-</ol>
-
-<h3 id="微信小程序商城构建全栈应用">微信小程序商城构建全栈应用</h3>
+<h4 id="微信小程序商城构建全栈应用">微信小程序商城构建全栈应用</h4>
 
 <p>百度云&gt;全部文件&gt;微信小程序商城构建全栈应用（下&hellip;&gt;第9章微信登陆与令牌</p>
 
 <p><a href="https://coding.imooc.com/class/chapter/97.html#Anchor">https://coding.imooc.com/class/chapter/97.html#Anchor</a></p>
 
-<h3 id="微信接口授权成功">微信接口授权成功</h3>
+<h4 id="开发者工具">开发者工具</h4>
 
-<p>开发者工具，在线调试接口</p>
+<p>公众平台测试帐号<br />
+<a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login">微信公众平台接口测试帐号申请</a></p>
 
-<p>微信公众平台接口测试帐号申请<br />
-<a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login">https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login</a></p>
+<p>在线接口调试工具
+<img src="http://qiniu.xingtan.xyz/2018-12-12-17-03-10-2018121217311.png" alt="2018-12-12-17-03-10-2018121217311" /></p>
 
-<p><img src="http://qiniu.xingtan.xyz/2018-12-12-17-03-10-2018121217311.png" alt="2018-12-12-17-03-10-2018121217311" /></p>
+<p><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1455784140">微信web开发者工具</a></p>
+
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html">全新的 微信开发者工具</a></p>
+
+<blockquote>
+<p>为了帮助开发者简单和高效地开发和调试微信小程序，我们在原有的公众号网页调试工具的基础上，推出了全新的 <a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html">微信开发者工具</a>，集成了公众号网页调试和小程序调试两种开发模式。</p>
+</blockquote>
+
+<h3 id="问题">问题</h3>
+
+<h4 id="guzzlehttp">guzzlehttp</h4>
+
+<pre><code class="language-bash">cd ~/tp5
+composer require guzzlehttp/guzzle
+</code></pre>
+
+<pre><code class="language-php">// ~/tp5/application/index/controller/Index.php
+&lt;?php
+namespace app\index\controller;
+
+use GuzzleHttp\Client;
+
+class Index
+{
+    // ...
+
+    public function http()
+    {
+        $client = new Client();
+        $res = $client-&gt;request('GET', 'https://api.github.com/repos/guzzle/guzzle');
+        return $res-&gt;getBody();
+    }
+}
+</code></pre>
+
+<p>访问 <a href="http://example.com/index/index/http">http://example.com/index/index/http</a> 报错</p>
+
+<blockquote>
+<p>cURL error 60: SSL certificate problem: unable to get local issuer certificate (see <a href="http://curl.haxx.se/libcurl/c/libcurl-errors.html">http://curl.haxx.se/libcurl/c/libcurl-errors.html</a>)</p>
+</blockquote>
+
+<p><a href="https://medium.com/@badruayomaya/laravel-paystack-curl-error-e21ffbe9b384">https://medium.com/@badruayomaya/laravel-paystack-curl-error-e21ffbe9b384</a><br />
+<a href="https://github.com/yabacon/paystack-php/wiki/cURL-error-60:-SSL-certificate-problem:-unable-to-get-local-issuer-certificate-(see-http:--curl.haxx.se-libcurl-c-libcurl-errors.html">https://github.com/yabacon/paystack-php/wiki/cURL-error-60:-SSL-certificate-problem:-unable-to-get-local-issuer-certificate-(see-http:--curl.haxx.se-libcurl-c-libcurl-errors.html</a>)<br />
+<a href="https://stackoverflow.com/a/49071524">https://stackoverflow.com/a/49071524</a></p>
+
+<ol>
+<li>download <a href="https://curl.haxx.se/ca/cacert.pem">https://curl.haxx.se/ca/cacert.pem</a><br /></li>
+<li>move it to php ext directory or somewhere else<br /></li>
+
+<li><p>edit php.ini</p>
+
+<pre><code class="language-ini">[curl]
+; A default value for the CURLOPT_CAINFO option. This is required to be an
+; absolute path.
+curl.cainfo = &quot;absolute\path\to\cacert.pem&quot;
+</code></pre></li>
+
+<li><p>restart web server</p></li>
+</ol>
+
+<h4 id="thinkphp-返回格式-html-json">ThinkPHP 返回格式 html =&gt; json</h4>
+
+<p><a href="https://www.kancloud.cn/manual/thinkphp5_1/353994">响应-&gt;响应输出</a><br />
+<a href="https://www.kancloud.cn/manual/thinkphp5_1/353995">响应-&gt;响应参数</a></p>
+
+<pre><code class="language-php">// 配置文件 ~/tp5/config/app.php
+// 默认输出类型
+'default_return_type'    =&gt; 'json',
+// 访问的输出结果就变成了JSON字符串
+</code></pre>
+
+<p>或者这样设置header</p>
+
+<pre><code class="language-php">// ~/tp5/application/index/controller/Index.php
+&lt;?php
+namespace app\index\controller;
+
+use GuzzleHttp\Client;
+
+class Index
+{
+    // ...
+
+    public function http()
+    {
+        $client = new Client();
+        $res = $client-&gt;request('GET', 'https://api.github.com/repos/guzzle/guzzle');
+        // return $res-&gt;getBody();
+        return response()-&gt;data($res-&gt;getBody())
+            -&gt;header('Content-Type', 'text/json; charset=utf-8');
+    }
+}
+</code></pre>
 
 <h3 id="chroma">Chroma</h3>
 
@@ -416,11 +523,16 @@ URL参数方式改成顺序解析 &lsquo;url_param_type&rsquo;         =&gt; 1</
 	</main>
 	
 	
-	<div class="referral">
+	<div class="referral w-100-l">
 		<a class="ma3" href="https://www.vultr.com/?ref=7700886"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a>
 		<a class="ma3" href="https://m.do.co/c/8a078a8e03fb"><img src="http://qiniu.xingtan.xyz/DO_Logo_Horizontal_Blue.png" height="90" alt=""></a>
 		<a class="ma3" href="https://bandwagonhost.com/aff.php?aff=9441"><img src="http://qiniu.xingtan.xyz/bandwagonhost.png" alt=""></a>
 		<a class="ma3" href="https://portal.qiniu.com/signup?code=3lmr0pb0te91u"><img src="https://mars-assets.qnssl.com/qiniulog/img-slogan-blue-en.png" alt=""></a>
+	</div>
+
+	
+	<div class="friends flex-l justify-between w-100-l mt4">
+		<a href="https://salttiger.com/">SaltTiger</a>
 	</div>
 
     <aside class="w-30-l mt6-l">
@@ -465,6 +577,13 @@ h3 {
 	margin-left: -2rem;
 	padding-left: 0.5rem;
 }
+h4 {
+	background-color: skyblue;
+	margin-left: -1rem;
+	padding-left: .5rem;
+	box-sizing: content-box;
+    width: max-content;
+}
 
  
 blockquote {
@@ -494,6 +613,8 @@ p > code {
 	flex-direction: column;
 	align-items: stretch;
 }
+
+ 
 </style>
 
 

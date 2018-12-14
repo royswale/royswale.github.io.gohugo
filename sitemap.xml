@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://royswale.github.io/posts/nodejs/</loc>
+    <lastmod>2018-12-14T15:17:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/java-android/</loc>
+    <lastmod>2018-12-14T14:11:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://royswale.github.io/posts/socket/</loc>
+    <lastmod>2018-12-14T14:02:09+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://royswale.github.io/posts/ui-ux/</loc>
     <lastmod>2018-12-13T20:47:44+08:00</lastmod>
   </url>
@@ -99,13 +114,13 @@
   
   <url>
     <loc>https://royswale.github.io/posts/</loc>
-    <lastmod>2018-12-13T20:47:44+08:00</lastmod>
+    <lastmod>2018-12-14T15:17:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://royswale.github.io/</loc>
-    <lastmod>2018-12-13T20:47:44+08:00</lastmod>
+    <lastmod>2018-12-14T15:17:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
