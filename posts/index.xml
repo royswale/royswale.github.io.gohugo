@@ -132,7 +132,15 @@ https://lbs.qq.com/qqmap_wx_jssdk/index.html</description>
       <guid>https://royswale.github.io/posts/git/</guid>
       <description> https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &amp;ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
- </description>
+ git detached 在GitKraken中从匿名分支切换到master分支，匿名分支丢失了
+是我误操作的
+执行这个
+git checkout 1f4fc55  可以回到之前的HEAD游离状态
+Git HEAD detached from XXX (git HEAD 游离) 解决办法
+这个文章的解救方法就是：
+在当前游离状态下新建分支temp，提交改动
+回到master分支，合并temp，解决冲突，删除temp
+# git branch temp # git checkout temp git checkout -b temp git status git checkout master git merge temp # 用 GitKraken 解决冲突 git commit -m &amp;quot;resolve conflict&amp;quot; git push -u origin master git branch -d temp  </description>
     </item>
     
     <item>

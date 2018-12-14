@@ -31,7 +31,15 @@
     <meta property="og:title" content="Git" />
 <meta property="og:description" content=" https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
- " />
+ git detached 在GitKraken中从匿名分支切换到master分支，匿名分支丢失了
+是我误操作的
+执行这个
+git checkout 1f4fc55  可以回到之前的HEAD游离状态
+Git HEAD detached from XXX (git HEAD 游离) 解决办法
+这个文章的解救方法就是：
+在当前游离状态下新建分支temp，提交改动
+回到master分支，合并temp，解决冲突，删除temp
+# git branch temp # git checkout temp git checkout -b temp git status git checkout master git merge temp # 用 GitKraken 解决冲突 git commit -m &quot;resolve conflict&quot; git push -u origin master git branch -d temp  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://royswale.github.io/posts/git/" /><meta property="article:published_time" content="2018-12-11T09:11:25&#43;08:00"/>
 <meta property="article:modified_time" content="2018-12-11T09:11:25&#43;08:00"/>
@@ -39,12 +47,20 @@
 <meta itemprop="name" content="Git">
 <meta itemprop="description" content=" https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
- ">
+ git detached 在GitKraken中从匿名分支切换到master分支，匿名分支丢失了
+是我误操作的
+执行这个
+git checkout 1f4fc55  可以回到之前的HEAD游离状态
+Git HEAD detached from XXX (git HEAD 游离) 解决办法
+这个文章的解救方法就是：
+在当前游离状态下新建分支temp，提交改动
+回到master分支，合并temp，解决冲突，删除temp
+# git branch temp # git checkout temp git checkout -b temp git status git checkout master git merge temp # 用 GitKraken 解决冲突 git commit -m &quot;resolve conflict&quot; git push -u origin master git branch -d temp  ">
 
 
 <meta itemprop="datePublished" content="2018-12-11T09:11:25&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-11T09:11:25&#43;08:00" />
-<meta itemprop="wordCount" content="15">
+<meta itemprop="wordCount" content="74">
 
 
 
@@ -53,7 +69,15 @@
 <meta name="twitter:title" content="Git"/>
 <meta name="twitter:description" content=" https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
- "/>
+ git detached 在GitKraken中从匿名分支切换到master分支，匿名分支丢失了
+是我误操作的
+执行这个
+git checkout 1f4fc55  可以回到之前的HEAD游离状态
+Git HEAD detached from XXX (git HEAD 游离) 解决办法
+这个文章的解救方法就是：
+在当前游离状态下新建分支temp，提交改动
+回到master分支，合并temp，解决冲突，删除temp
+# git branch temp # git checkout temp git checkout -b temp git status git checkout master git merge temp # 用 GitKraken 解决冲突 git commit -m &quot;resolve conflict&quot; git push -u origin master git branch -d temp  "/>
 
   </head>
 
@@ -138,6 +162,39 @@
 <blockquote>
 <p>不过还有更简单一点的方式。 如果给 git clone 命令传递 &ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。</p>
 </blockquote>
+
+<h3 id="git-detached">git detached</h3>
+
+<p><img src="http://qiniu.xingtan.xyz/git-2018121492213.png" alt="git-2018121492213" /></p>
+
+<p>在GitKraken中从匿名分支切换到master分支，匿名分支丢失了<br />
+是我误操作的</p>
+
+<p><img src="http://qiniu.xingtan.xyz/git-2018121493742.png" alt="git-2018121493742" /></p>
+
+<p>执行这个</p>
+
+<pre><code class="language-bash">git checkout 1f4fc55
+</code></pre>
+
+<p>可以回到之前的<code>HEAD游离</code>状态</p>
+
+<p><a href="https://blog.csdn.net/u011240877/article/details/76273335">Git HEAD detached from XXX (git HEAD 游离) 解决办法</a><br />
+这个文章的解救方法就是：<br />
+在当前游离状态下新建分支temp，提交改动<br />
+回到master分支，合并temp，解决冲突，删除temp</p>
+
+<pre><code class="language-bash"># git branch temp
+# git checkout temp
+git checkout -b temp
+git status
+git checkout master
+git merge temp
+# 用 GitKraken 解决冲突
+git commit -m &quot;resolve conflict&quot;
+git push -u origin master
+git branch -d temp
+</code></pre>
 <ul class="pa0">
   
 </ul>
@@ -216,7 +273,7 @@ pre > code.hljs {
 
  
 p > code {
-	background-color: azure;
+	background-color: paleturquoise;
 }
 
  
