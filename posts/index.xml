@@ -6,10 +6,54 @@
     <description>Recent content in Posts on Royswale Code Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Dec 2018 20:47:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Dec 2018 15:17:06 +0800</lastBuildDate>
     
 	<atom:link href="https://royswale.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nodejs</title>
+      <link>https://royswale.github.io/posts/nodejs/</link>
+      <pubDate>Fri, 14 Dec 2018 15:17:06 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/nodejs/</guid>
+      <description>Building a gRPC service with Node.js
+https://codelabs.developers.google.com/codelabs/cloud-grpc/index.html#0
+https://scotch.io/tutorials/build-a-health-tracking-app-with-react-graphql-and-user-authentication</description>
+    </item>
+    
+    <item>
+      <title>Java Android</title>
+      <link>https://royswale.github.io/posts/java-android/</link>
+      <pubDate>Fri, 14 Dec 2018 14:11:58 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/java-android/</guid>
+      <description> https://codelabs.developers.google.com/codelabs/android-training-hello-world/#0
+https://codelabs.developers.google.com/codelabs/build-your-first-android-app/index.html?index=..%2F..index#0
+https://www.raywenderlich.com/1434-java-for-android
+jvm languages java https://www.codecademy.com/courses/learn-java
+https://github.com/google/guava
+kotlin https://www.raywenderlich.com/4738-your-first-kotlin-android-app
+https://www.raywenderlich.com/5795-kotlin-podcast-s08-e01
+scala groovy closure </description>
+    </item>
+    
+    <item>
+      <title>Socket</title>
+      <link>https://royswale.github.io/posts/socket/</link>
+      <pubDate>Fri, 14 Dec 2018 14:02:09 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/posts/socket/</guid>
+      <description>Create a Multiplayer Pirate Shooter Game: In Your Browser
+https://code.tutsplus.com/tutorials/create-a-multiplayer-pirate-shooter-game-in-your-browser--cms-23311
+How to make a multiplayer online game with Phaser, Socket.io and Node.js.
+https://phaser.io/news/2017/03/socketio-multiplayer-tutorial
+Create a Basic Multiplayer Game in Phaser 3 with Socket.io
+https://gamedevacademy.org/create-a-basic-multiplayer-game-in-phaser-3-with-socket-io-part-1/
+https://gamedevacademy.org/create-a-basic-multiplayer-game-in-phaser-3-with-socket-io-part-2/
+How To Make a Simple Multiplayer Online Car Game with JavaScript
+https://codeburst.io/how-to-make-a-simple-multiplayer-online-car-game-with-javascript-89d47908f995</description>
+    </item>
     
     <item>
       <title>UI UX</title>
@@ -19,7 +63,7 @@
       <guid>https://royswale.github.io/posts/ui-ux/</guid>
       <description>https://github.com/tachyons-css/tachyons/
 https://github.com/dwyl/learn-tachyons
-https://github.com/dwyl/learn-tachyons#30-second-summary  </description>
+https://github.com/dwyl/learn-tachyons#30-second-summary  bulma https://jgthms.com/</description>
     </item>
     
     <item>
@@ -130,17 +174,18 @@ https://lbs.qq.com/qqmap_wx_jssdk/index.html</description>
       <pubDate>Tue, 11 Dec 2018 09:11:25 +0800</pubDate>
       
       <guid>https://royswale.github.io/posts/git/</guid>
-      <description> https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
+      <description>https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &amp;ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
  git detached 在GitKraken中从匿名分支切换到master分支，匿名分支丢失了
 是我误操作的
 执行这个
 git checkout 1f4fc55  可以回到之前的HEAD游离状态
+图解Git - HEAD标识处于分离状态时的提交操作
 Git HEAD detached from XXX (git HEAD 游离) 解决办法
 这个文章的解救方法就是：
 在当前游离状态下新建分支temp，提交改动
 回到master分支，合并temp，解决冲突，删除temp
-# git branch temp # git checkout temp git checkout -b temp git status git checkout master git merge temp # 用 GitKraken 解决冲突 git commit -m &amp;quot;resolve conflict&amp;quot; git push -u origin master git branch -d temp  </description>
+# git branch temp # git checkout temp git checkout -b temp git status git checkout master git merge temp # 用 GitKraken 解决冲突 git commit -m &amp;quot;resolve conflict&amp;quot; git push -u origin master git branch -d temp  按照上述方法解决了，</description>
     </item>
     
     <item>
