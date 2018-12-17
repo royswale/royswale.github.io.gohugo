@@ -19,7 +19,23 @@
       <guid>https://royswale.github.io/posts/nodejs/</guid>
       <description>Building a gRPC service with Node.js
 https://codelabs.developers.google.com/codelabs/cloud-grpc/index.html#0
-https://scotch.io/tutorials/build-a-health-tracking-app-with-react-graphql-and-user-authentication</description>
+https://scotch.io/tutorials/build-a-health-tracking-app-with-react-graphql-and-user-authentication
+部署 supervisor vs pm2 vs forever哪个更好
+https://cnodejs.org/topic/53eb0b39f4b616a82f0ba1dd
+“NodeJS在大搜车” 之 应用部署篇
+https://div.io/topic/1067
+Express 应用程序的进程管理器
+https://expressjs.com/zh-cn/advanced/pm.html
+https://github.com/Unitech/PM2/
+https://pm2.io/doc/en/runtime/overview/
+https://github.com/remy/nodemon
+https://nodemon.io/
+Restart Your Node.js Apps Automatically Using nodemon
+https://alligator.io/workflow/nodemon/
+xaas okta https://developer.okta.com/blog/2018/02/15/build-crud-app-vuejs-node
+https://developer.okta.com/blog/2018/02/15/build-crud-app-vuejs-node
+authy Quick and Easy 2FA: Adding Authy to a NodeJS App
+https://www.twilio.com/blog/2016/11/quick-and-easy-2fa-adding-authy-to-a-nodejs-app.html</description>
     </item>
     
     <item>
@@ -65,7 +81,11 @@ https://codeburst.io/how-to-make-a-simple-multiplayer-online-car-game-with-javas
 https://github.com/dwyl/learn-tachyons
 https://github.com/dwyl/learn-tachyons#30-second-summary  bulma https://jgthms.com/
 css flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-https://css-tricks.com/almanac/properties/f/flex/ https://css-tricks.com/designing-a-product-page-layout-with-flexbox/</description>
+https://css-tricks.com/almanac/properties/f/flex/ https://css-tricks.com/designing-a-product-page-layout-with-flexbox/
+prototype https://modao.cc/downloads
+https://library.ant.design/
+https://ant.design/docs/spec/download-cn
+https://www.xiaopiu.com/topic/ant-design</description>
     </item>
     
     <item>
