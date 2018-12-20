@@ -172,25 +172,6 @@ VSCode User Settings 有关图片粘贴上传的插件配置
     </item>
     
     <item>
-      <title>Miniapp</title>
-      <link>https://royswale.github.io/posts/miniapp/</link>
-      <pubDate>Tue, 11 Dec 2018 09:56:39 +0800</pubDate>
-      
-      <guid>https://royswale.github.io/posts/miniapp/</guid>
-      <description>【小程序开发实践】王者图鉴
-http://liaokeyu.com/%E6%8A%80%E6%9C%AF/2017/09/02/mini-program-kingdex.html
-微信小程序 - 王者图鉴
-https://github.com/kaeyleo/kingdex
-🕷️ node.js + leancloud 王者荣耀官网爬虫
-https://github.com/kaeyleo/king-of-glory-spider
- 看了这个小程序，sketch设计的很好，交互很好，还接入了小程序推广
- 一起脱去小程序的外套 - 微信小程序架构解析
-https://zhuanlan.zhihu.com/p/25105936
-微信小程序 微信小程序原生LBS能力的最佳拍档
-https://lbs.qq.com/qqmap_wx_jssdk/index.html</description>
-    </item>
-    
-    <item>
       <title>Git</title>
       <link>https://royswale.github.io/posts/git/</link>
       <pubDate>Tue, 11 Dec 2018 09:11:25 +0800</pubDate>
@@ -307,14 +288,17 @@ post_asset_folder: true  I use VSCode to write post with Paste Image extension
       <pubDate>Thu, 06 Dec 2018 14:48:48 +0800</pubDate>
       
       <guid>https://royswale.github.io/posts/hexo-theme-next/</guid>
-      <description>next old https://theme-next.iissnan.com/getting-started.html
+      <description>melody https://github.com/Molunerfinn/hexo-theme-melody
+https://molunerfinn.com/hexo-theme-melody-doc/#/zh-Hans/
+Hexo主题开发经验杂谈
+https://molunerfinn.com/make-a-hexo-theme
+next old https://theme-next.iissnan.com/getting-started.html
 new https://github.com/theme-next/hexo-theme-next
 https://theme-next.org/docs/getting-started/
 install https://github.com/theme-next/hexo-theme-next#installation https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md#option-3-download-latest-master-branch
 $ cd hexo $ git clone https://github.com/theme-next/hexo-theme-next themes/next  _config.yml
 ## Themes: https://hexo.io/themes/ # theme: landscape theme: next   Now you have installed NexT theme, next we will verify whether it is enabled correctly. Between changing the theme and verifying it, we&amp;rsquo;d better use hexo clean to clean Hexo&amp;rsquo;s cache.
- update https://github.com/theme-next/hexo-theme-next#update
-$ cd themes/next $ git pull  config hexo/_config.</description>
+ update https://github.com/theme-next/hexo-theme-next#update</description>
     </item>
     
     <item>

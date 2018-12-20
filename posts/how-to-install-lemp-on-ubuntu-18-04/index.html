@@ -58,7 +58,7 @@ https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubunt
 
 <meta itemprop="datePublished" content="2018-12-06T11:44:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-06T11:44:23&#43;08:00" />
-<meta itemprop="wordCount" content="844">
+<meta itemprop="wordCount" content="969">
 
 
 
@@ -449,6 +449,49 @@ sudo service nginx status
 phpinfo();
 </code></pre></li>
 </ol>
+
+<h3 id="https">HTTPS</h3>
+
+<p>把 SSL 证书文件放到某个目录<br />
+配置 Nginx 的 server block 相关 https 配置</p>
+
+<pre><code class="language-bash">sudo nginx -t
+sudo service nginx status
+sudo service nginx restart
+sudo service nginx status
+</code></pre>
+
+<p>别忘了防火墙允许https</p>
+
+<pre><code class="language-bash">&gt; sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+Nginx HTTP                 ALLOW       Anywhere
+3306                       ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+Nginx HTTP (v6)            ALLOW       Anywhere (v6)
+3306 (v6)                  ALLOW       Anywhere (v6)
+
+&gt; sudo ufw allow &quot;Nginx HTTPS&quot;
+Rule added
+Rule added (v6)
+&gt; sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+Nginx HTTP                 ALLOW       Anywhere
+3306                       ALLOW       Anywhere
+Nginx HTTPS                ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+Nginx HTTP (v6)            ALLOW       Anywhere (v6)
+3306 (v6)                  ALLOW       Anywhere (v6)
+Nginx HTTPS (v6)           ALLOW       Anywhere (v6)
+</code></pre>
 
 <p>Bingo!</p>
 <ul class="pa0">

@@ -62,7 +62,7 @@ $ composer config -g repo.packagist composer https://packagist.">
 
 <meta itemprop="datePublished" content="2018-12-10T19:30:36&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-10T19:30:36&#43;08:00" />
-<meta itemprop="wordCount" content="551">
+<meta itemprop="wordCount" content="601">
 
 
 
@@ -425,6 +425,20 @@ YII2中服务器端验证总是失败..<br />
 
 <h3 id="问题">问题</h3>
 
+<h4 id="xdebug">xdebug</h4>
+
+<p>查看phpinfo的输出信息，下载正确的xdebug版本，<br />
+放到php\ext目录下，修改php.ini</p>
+
+<pre><code class="language-ini">[Xdebug]
+zend_extension = D:\Program Files\xampp\php\ext\php_xdebug-2.5.5-5.6-vc11.dll
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 1
+</code></pre>
+
+<p>然后在phpstorm中配置调试服务器<br />
+或者在VSCode中xdebug extension来调试</p>
+
 <h4 id="guzzlehttp">guzzlehttp</h4>
 
 <pre><code class="language-bash">cd ~/tp5
@@ -454,6 +468,10 @@ class Index
 
 <blockquote>
 <p>cURL error 60: SSL certificate problem: unable to get local issuer certificate (see <a href="http://curl.haxx.se/libcurl/c/libcurl-errors.html">http://curl.haxx.se/libcurl/c/libcurl-errors.html</a>)</p>
+
+<p>cURL error 35: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.github.com:443 (see <a href="http://curl.haxx.se/libcurl/c/libcurl-errors.html">http://curl.haxx.se/libcurl/c/libcurl-errors.html</a>)</p>
+
+<p>cURL error 56: OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0 (see <a href="http://curl.haxx.se/libcurl/c/libcurl-errors.html">http://curl.haxx.se/libcurl/c/libcurl-errors.html</a>)</p>
 </blockquote>
 
 <p><a href="https://medium.com/@badruayomaya/laravel-paystack-curl-error-e21ffbe9b384">https://medium.com/@badruayomaya/laravel-paystack-curl-error-e21ffbe9b384</a><br />
@@ -477,6 +495,19 @@ curl.cainfo = &quot;absolute\path\to\cacert.pem&quot;
 
 <p>使用Guzzle进行API测试<br />
 <a href="https://php1024.com/posts/15.htm">https://php1024.com/posts/15.htm</a></p>
+
+<h4 id="curl">curl</h4>
+
+<p><a href="https://github.com/php-mod/curl">https://github.com/php-mod/curl</a></p>
+
+<blockquote>
+<p>用这个包，没有上面guzzle遇到的问题，无需配置cacert.pem</p>
+</blockquote>
+
+<p>composer require curl/curl</p>
+
+<p>$curl = new Curl\Curl();
+$curl-&gt;get(&lsquo;<a href="http://www.example.com/'">http://www.example.com/'</a>);</p>
 
 <h4 id="thinkphp-返回格式-html-json">ThinkPHP 返回格式 html =&gt; json</h4>
 
