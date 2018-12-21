@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodejs on Royswale Code Garden</title>
+    <link>https://royswale.github.io/nodejs/</link>
+    <description>Recent content in Nodejs on Royswale Code Garden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Dec 2018 15:17:06 +0800</lastBuildDate>
+    
+	<atom:link href="https://royswale.github.io/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nodejs</title>
+      <link>https://royswale.github.io/nodejs/nodejs/</link>
+      <pubDate>Fri, 14 Dec 2018 15:17:06 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/nodejs/nodejs/</guid>
+      <description>official https://nodejs.org/en/docs/guides/getting-started-guide/
+cron https://github.com/kelektiv/node-cron
+https://github.com/node-cron/node-cron
+https://www.npmjs.com/package/node-cron
+Node.js Cron Jobs By Examples
+https://scotch.io/tutorials/nodejs-cron-jobs-by-examples
+more tutorial Building a gRPC service with Node.js
+https://codelabs.developers.google.com/codelabs/cloud-grpc/index.html#0
+https://scotch.io/tutorials/build-a-health-tracking-app-with-react-graphql-and-user-authentication
+部署 supervisor vs pm2 vs forever哪个更好
+https://cnodejs.org/topic/53eb0b39f4b616a82f0ba1dd
+“NodeJS在大搜车” 之 应用部署篇
+https://div.io/topic/1067
+Express 应用程序的进程管理器
+https://expressjs.com/zh-cn/advanced/pm.html
+https://github.com/Unitech/PM2/
+https://pm2.io/doc/en/runtime/overview/
+https://github.com/remy/nodemon
+https://nodemon.io/
+Restart Your Node.js Apps Automatically Using nodemon
+https://alligator.io/workflow/nodemon/
+Running PM2 &amp;amp; Node.js in Production Environments
+https://hackernoon.com/running-pm2-node-js-in-production-environments-13e703fc108a
+Xaas 6 JavaScript User Authentication Libraries for 2019
+https://blog.bitsrc.io/6-javascript-user-authentication-libraries-for-2019-6c7c45fbe458
+okta https://developer.okta.com/blog/2018/02/15/build-crud-app-vuejs-node
+https://developer.okta.com/blog/2018/02/15/build-crud-app-vuejs-node
+authy Quick and Easy 2FA: Adding Authy to a NodeJS App</description>
+    </item>
+    
+    <item>
+      <title>nodejs windows build tools</title>
+      <link>https://royswale.github.io/nodejs/nodejs-windows-build-tools/</link>
+      <pubDate>Fri, 07 Dec 2018 14:11:26 +0800</pubDate>
+      
+      <guid>https://royswale.github.io/nodejs/nodejs-windows-build-tools/</guid>
+      <description>https://github.com/nodejs/node-gyp https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#compiling-native-addon-modules
+open powershell with administrator privilege
+npm i -g --production windows-build-tools  got this
+Status from the installers: ---------- Visual Studio Build Tools ---------- 2018-12-07T14:06:07 : Verbose : [InstalledProductsProviderImpl]: Stream was closed 2018-12-07T14:06:07 : Verbose : [InstallerImpl]: Rpc connection was closed. 2018-12-07T14:06:07 : Verbose : [InstallerImpl]: Stream was closed 2018-12-07T14:06:07 : Verbose : [SetupUpdaterImpl]: Rpc connection was closed. 2018-12-07T14:06:07 : Verbose : [SetupUpdaterImpl]: Stream was closed ------------------- Python -------------------- Python 2.</description>
+    </item>
+    
+  </channel>
+</rss>
