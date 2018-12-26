@@ -62,7 +62,7 @@ Git HEAD detached from XXX (git HEAD 游离) 解决办法
 
 <meta itemprop="datePublished" content="2018-12-11T09:11:25&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-11T09:11:25&#43;08:00" />
-<meta itemprop="wordCount" content="107">
+<meta itemprop="wordCount" content="131">
 
 
 
@@ -202,15 +202,36 @@ git branch -d temp
 
 <p>按照上述方法解决了，<br />
 我是在使用 gohugo 的 submodule 之 public 下遇到的这个问题。<br />
-看图可以更清晰是怎么回事</p>
+看图 GitKraken 可以更清晰是怎么回事</p>
 
 <p><img src="http://qiniu.xingtan.xyz/git-20181214102326.png" alt="git-20181214102326" /></p>
+
+<h3 id="config">config</h3>
+
+<ol>
+<li><p>全局或在当前项目配置 name 和 email</p>
 
 <pre><code class="language-bash">git config --list --global
 git config --global user.name yourname
 # git config --global user.name &quot;firstname lastname&quot;
 git config --global user.email yourname@yahoo.com
-</code></pre>
+</code></pre></li>
+</ol>
+
+<h3 id="ignore">ignore</h3>
+
+<ol>
+<li><p>IntelliJ IDE 生成的 .idea 目录在 .gitignore 文件中添加之后还是被跟踪的问题</p>
+
+<p><a href="https://www.jianshu.com/p/9ff3920d7a63">idea .gitignore(git文件忽略)</a></p>
+
+<blockquote>
+<p>发现.idea文件夹下的文件还有变更被提交，这是因为在使用gitignore之前，此文件就以及被跟踪了，这样的话需要移除跟踪，如下命令:</p>
+</blockquote>
+
+<pre><code class="language-bash">git rm --cached --force -r .idea
+</code></pre></li>
+</ol>
 <ul class="pa0">
   
 </ul>
