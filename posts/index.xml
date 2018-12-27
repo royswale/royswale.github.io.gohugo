@@ -150,7 +150,11 @@ VSCode User Settings 有关图片粘贴上传的插件配置
       <pubDate>Tue, 11 Dec 2018 09:11:25 +0800</pubDate>
       
       <guid>https://royswale.github.io/posts/git/</guid>
-      <description>https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
+      <description>git flow https://www.ibrand.cc/open/article?course_id=1&amp;amp;chapter_id=2&amp;amp;article_id=6
+https://github.com/oldratlee/translations/blob/master/git-workflows-and-tutorials/README.md
+https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md#23-gitflow%E5%B7%A5%E4%BD%9C%E6%B5%81
+https://www.atlassian.com/git/tutorials/comparing-workflows
+https://www.atlassian.com/git/tutorials  submodule 检出项目的同时也检出子模块 git clone git@github.com:royswale/gohugoblog.git --recursive  https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97
  不过还有更简单一点的方式。 如果给 git clone 命令传递 &amp;ndash;recursive 选项，它就会自动初始化并更新仓库中的每一个子模块。
  git detached 在GitKraken中从匿名分支切换到master分支，匿名分支丢失了
 是我误操作的
